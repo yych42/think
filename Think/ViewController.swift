@@ -1,0 +1,20 @@
+//
+//  ViewController.swift
+//  Think
+//
+//  Created by Allen on 11/4/18.
+//  Copyright © 2018 Yaoyu Chen. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+
+}
+
