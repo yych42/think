@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81AAA711EC62C8F89446B9EF /* Pods_Think.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */; };
+		9F476AAC2190330B0084F06E /* Notice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AAA2190330B0084F06E /* Notice@3x.png */; };
+		9F476AAD2190330B0084F06E /* Notice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AAB2190330B0084F06E /* Notice@2x.png */; };
+		9F476AB0219035D10084F06E /* think@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AAE219035D10084F06E /* think@3x.png */; };
+		9F476AB1219035D10084F06E /* think@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AAF219035D10084F06E /* think@2x.png */; };
+		9F476AB6219038DF0084F06E /* ButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AB4219038DF0084F06E /* ButtonBackground@2x.png */; };
+		9F476AB7219038DF0084F06E /* ButtonBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AB5219038DF0084F06E /* ButtonBackground@3x.png */; };
 		9FE66AAF218EDD54005E9830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66AAE218EDD54005E9830 /* AppDelegate.swift */; };
 		9FE66AB1218EDD54005E9830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66AB0218EDD54005E9830 /* ViewController.swift */; };
 		9FE66AB4218EDD54005E9830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE66AB2218EDD54005E9830 /* Main.storyboard */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7064E63967F9E1659FD0A1A2 /* Pods-Think.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think.release.xcconfig"; path = "Pods/Target Support Files/Pods-Think/Pods-Think.release.xcconfig"; sourceTree = "<group>"; };
+		9F476AAA2190330B0084F06E /* Notice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Notice@3x.png"; sourceTree = "<group>"; };
+		9F476AAB2190330B0084F06E /* Notice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Notice@2x.png"; sourceTree = "<group>"; };
+		9F476AAE219035D10084F06E /* think@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "think@3x.png"; sourceTree = "<group>"; };
+		9F476AAF219035D10084F06E /* think@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "think@2x.png"; sourceTree = "<group>"; };
+		9F476AB4219038DF0084F06E /* ButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonBackground@2x.png"; sourceTree = "<group>"; };
+		9F476AB5219038DF0084F06E /* ButtonBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonBackground@3x.png"; sourceTree = "<group>"; };
 		9FE66AAB218EDD54005E9830 /* Think.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Think.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE66AAE218EDD54005E9830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE66AB0218EDD54005E9830 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,8 @@
 		9FE66ACA218EDD56005E9830 /* ThinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE66ACE218EDD56005E9830 /* ThinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkUITests.swift; sourceTree = "<group>"; };
 		9FE66AD0218EDD56005E9830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Think.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF847EBA8F21D286883AB519 /* Pods-Think.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Think/Pods-Think.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AAA711EC62C8F89446B9EF /* Pods_Think.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443A3EF49A31497B5B95AB9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF847EBA8F21D286883AB519 /* Pods-Think.debug.xcconfig */,
+				7064E63967F9E1659FD0A1A2 /* Pods-Think.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9FE66AA2218EDD53005E9830 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,8 @@
 				9FE66AC2218EDD56005E9830 /* ThinkTests */,
 				9FE66ACD218EDD56005E9830 /* ThinkUITests */,
 				9FE66AAC218EDD54005E9830 /* Products */,
+				443A3EF49A31497B5B95AB9E /* Pods */,
+				D6022657BFDE94356E9E57F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +129,12 @@
 				9FE66AB0218EDD54005E9830 /* ViewController.swift */,
 				9FE66AB2218EDD54005E9830 /* Main.storyboard */,
 				9FE66AB5218EDD56005E9830 /* Assets.xcassets */,
+				9F476AAB2190330B0084F06E /* Notice@2x.png */,
+				9F476AAA2190330B0084F06E /* Notice@3x.png */,
+				9F476AAF219035D10084F06E /* think@2x.png */,
+				9F476AAE219035D10084F06E /* think@3x.png */,
+				9F476AB4219038DF0084F06E /* ButtonBackground@2x.png */,
+				9F476AB5219038DF0084F06E /* ButtonBackground@3x.png */,
 				9FE66AB7218EDD56005E9830 /* LaunchScreen.storyboard */,
 				9FE66ABA218EDD56005E9830 /* Info.plist */,
 			);
@@ -125,6 +159,14 @@
 			path = ThinkUITests;
 			sourceTree = "<group>";
 		};
+		D6022657BFDE94356E9E57F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FE66AD3218EDD56005E9830 /* Build configuration list for PBXNativeTarget "Think" */;
 			buildPhases = (
+				58904F31A5FEC126CEA48974 /* [CP] Check Pods Manifest.lock */,
 				9FE66AA7218EDD53005E9830 /* Sources */,
 				9FE66AA8218EDD53005E9830 /* Frameworks */,
 				9FE66AA9218EDD53005E9830 /* Resources */,
+				1E9BC94D94860B2E4CFB59C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,8 +273,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F476AB6219038DF0084F06E /* ButtonBackground@2x.png in Resources */,
 				9FE66AB9218EDD56005E9830 /* LaunchScreen.storyboard in Resources */,
+				9F476AAC2190330B0084F06E /* Notice@3x.png in Resources */,
+				9F476AAD2190330B0084F06E /* Notice@2x.png in Resources */,
+				9F476AB1219035D10084F06E /* think@2x.png in Resources */,
 				9FE66AB6218EDD56005E9830 /* Assets.xcassets in Resources */,
+				9F476AB7219038DF0084F06E /* ButtonBackground@3x.png in Resources */,
+				9F476AB0219035D10084F06E /* think@3x.png in Resources */,
 				9FE66AB4218EDD54005E9830 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +300,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E9BC94D94860B2E4CFB59C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Think/Pods-Think-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/NSData+FastHex/NSData_FastHex.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/XMRMiner/XMRMiner.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSData_FastHex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMRMiner.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think/Pods-Think-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58904F31A5FEC126CEA48974 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Think-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FE66AA7218EDD53005E9830 /* Sources */ = {
@@ -430,16 +533,17 @@
 		};
 		9FE66AD4218EDD56005E9830 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF847EBA8F21D286883AB519 /* Pods-Think.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H2Q866RNLQ;
+				DEVELOPMENT_TEAM = 6DYKR995S2;
 				INFOPLIST_FILE = Think/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.yaoyuchen.Think;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.yaoyuchen.apps.think;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,16 +552,17 @@
 		};
 		9FE66AD5218EDD56005E9830 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7064E63967F9E1659FD0A1A2 /* Pods-Think.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H2Q866RNLQ;
+				DEVELOPMENT_TEAM = 6DYKR995S2;
 				INFOPLIST_FILE = Think/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.yaoyuchen.Think;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.yaoyuchen.apps.think;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

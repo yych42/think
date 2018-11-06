@@ -1,0 +1,6 @@
+framework module Pods_Think {
+  umbrella header "Pods-Think-umbrella.h"
+
+  export *
+  module * { export * }
+}
