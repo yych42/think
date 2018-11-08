@@ -18,35 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Idling." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPX-xn-XTv">
-                                <rect key="frame" x="65" y="400" width="245" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idling." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPX-xn-XTv">
+                                <rect key="frame" x="145.33333333333334" y="400" width="84.333333333333343" height="32.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="no results submitted, yet." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anc-JN-egO">
-                                <rect key="frame" x="65" y="452" width="245" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no results submitted, yet." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anc-JN-egO">
+                                <rect key="frame" x="70.333333333333329" y="452" width="234.66666666666669" height="21"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
                                 <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Notice.png" translatesAutoresizingMaskIntoConstraints="NO" id="RQu-7k-Ws3">
-                                <rect key="frame" x="10" y="143" width="354" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notice.png" translatesAutoresizingMaskIntoConstraints="NO" id="RQu-7k-Ws3">
+                                <rect key="frame" x="10.666666666666657" y="143" width="354" height="176"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="think.png" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-CU-TJB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="think.png" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-CU-TJB">
                                 <rect key="frame" x="150" y="78" width="75" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ButtonBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-cI-RaD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ButtonBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-cI-RaD">
                                 <rect key="frame" x="63" y="634" width="249" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-s1-bgA">
-                                <rect key="frame" x="121" y="645" width="132" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-s1-bgA">
+                                <rect key="frame" x="141" y="651" width="93" height="36"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
                                 <state key="normal" title="Get Focus">
                                     <color key="titleColor" red="1" green="0.35176416032465752" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,6 +51,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="anc-JN-egO" firstAttribute="top" secondItem="MPX-xn-XTv" secondAttribute="bottom" constant="19.329999999999998" id="0al-wO-EQx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BzA-s1-bgA" secondAttribute="bottom" constant="91" id="4F1-yA-v4F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="anc-JN-egO" secondAttribute="trailing" id="BBj-DK-W3w"/>
+                            <constraint firstItem="RQu-7k-Ws3" firstAttribute="top" secondItem="8rd-CU-TJB" secondAttribute="bottom" constant="36" id="DJZ-xr-lJa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MPX-xn-XTv" secondAttribute="trailing" id="Nsa-HG-Yzg"/>
+                            <constraint firstItem="nhM-cI-RaD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VFR-iF-XPZ"/>
+                            <constraint firstItem="8rd-CU-TJB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X47-so-SQB"/>
+                            <constraint firstItem="anc-JN-egO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="baQ-tk-qLH"/>
+                            <constraint firstItem="MPX-xn-XTv" firstAttribute="top" secondItem="RQu-7k-Ws3" secondAttribute="bottom" constant="81" id="cHZ-iG-VcP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nhM-cI-RaD" secondAttribute="bottom" constant="61" id="crT-ZN-z6B"/>
+                            <constraint firstItem="anc-JN-egO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e2q-1g-jUA"/>
+                            <constraint firstItem="8rd-CU-TJB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="hd8-Tl-cqp"/>
+                            <constraint firstItem="RQu-7k-Ws3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kbP-tO-IiP"/>
+                            <constraint firstItem="BzA-s1-bgA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kel-rY-QLt"/>
+                            <constraint firstItem="MPX-xn-XTv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ogk-bX-czU"/>
+                            <constraint firstItem="MPX-xn-XTv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s2n-Ff-spA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
