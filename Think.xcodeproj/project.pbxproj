@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		81AAA711EC62C8F89446B9EF /* Pods_Think.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */; };
-		9F476AAC2190330B0084F06E /* Notice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AAA2190330B0084F06E /* Notice@3x.png */; };
-		9F476AAD2190330B0084F06E /* Notice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AAB2190330B0084F06E /* Notice@2x.png */; };
-		9F476AB0219035D10084F06E /* think@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AAE219035D10084F06E /* think@3x.png */; };
-		9F476AB1219035D10084F06E /* think@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AAF219035D10084F06E /* think@2x.png */; };
-		9F476AB6219038DF0084F06E /* ButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AB4219038DF0084F06E /* ButtonBackground@2x.png */; };
-		9F476AB7219038DF0084F06E /* ButtonBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F476AB5219038DF0084F06E /* ButtonBackground@3x.png */; };
 		9FE66AAF218EDD54005E9830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66AAE218EDD54005E9830 /* AppDelegate.swift */; };
 		9FE66AB1218EDD54005E9830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66AB0218EDD54005E9830 /* ViewController.swift */; };
 		9FE66AB4218EDD54005E9830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE66AB2218EDD54005E9830 /* Main.storyboard */; };
@@ -42,12 +36,6 @@
 
 /* Begin PBXFileReference section */
 		7064E63967F9E1659FD0A1A2 /* Pods-Think.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think.release.xcconfig"; path = "Pods/Target Support Files/Pods-Think/Pods-Think.release.xcconfig"; sourceTree = "<group>"; };
-		9F476AAA2190330B0084F06E /* Notice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Notice@3x.png"; sourceTree = "<group>"; };
-		9F476AAB2190330B0084F06E /* Notice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Notice@2x.png"; sourceTree = "<group>"; };
-		9F476AAE219035D10084F06E /* think@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "think@3x.png"; sourceTree = "<group>"; };
-		9F476AAF219035D10084F06E /* think@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "think@2x.png"; sourceTree = "<group>"; };
-		9F476AB4219038DF0084F06E /* ButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonBackground@2x.png"; sourceTree = "<group>"; };
-		9F476AB5219038DF0084F06E /* ButtonBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonBackground@3x.png"; sourceTree = "<group>"; };
 		9FE66AAB218EDD54005E9830 /* Think.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Think.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE66AAE218EDD54005E9830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE66AB0218EDD54005E9830 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,12 +117,6 @@
 				9FE66AB0218EDD54005E9830 /* ViewController.swift */,
 				9FE66AB2218EDD54005E9830 /* Main.storyboard */,
 				9FE66AB5218EDD56005E9830 /* Assets.xcassets */,
-				9F476AAB2190330B0084F06E /* Notice@2x.png */,
-				9F476AAA2190330B0084F06E /* Notice@3x.png */,
-				9F476AAF219035D10084F06E /* think@2x.png */,
-				9F476AAE219035D10084F06E /* think@3x.png */,
-				9F476AB4219038DF0084F06E /* ButtonBackground@2x.png */,
-				9F476AB5219038DF0084F06E /* ButtonBackground@3x.png */,
 				9FE66AB7218EDD56005E9830 /* LaunchScreen.storyboard */,
 				9FE66ABA218EDD56005E9830 /* Info.plist */,
 			);
@@ -273,14 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F476AB6219038DF0084F06E /* ButtonBackground@2x.png in Resources */,
 				9FE66AB9218EDD56005E9830 /* LaunchScreen.storyboard in Resources */,
-				9F476AAC2190330B0084F06E /* Notice@3x.png in Resources */,
-				9F476AAD2190330B0084F06E /* Notice@2x.png in Resources */,
-				9F476AB1219035D10084F06E /* think@2x.png in Resources */,
 				9FE66AB6218EDD56005E9830 /* Assets.xcassets in Resources */,
-				9F476AB7219038DF0084F06E /* ButtonBackground@3x.png in Resources */,
-				9F476AB0219035D10084F06E /* think@3x.png in Resources */,
 				9FE66AB4218EDD54005E9830 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

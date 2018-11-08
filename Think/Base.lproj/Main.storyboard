@@ -30,13 +30,13 @@
                                 <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notice.png" translatesAutoresizingMaskIntoConstraints="NO" id="RQu-7k-Ws3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notice" translatesAutoresizingMaskIntoConstraints="NO" id="RQu-7k-Ws3">
                                 <rect key="frame" x="10.666666666666657" y="143" width="354" height="176"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="think.png" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-CU-TJB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="think" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-CU-TJB">
                                 <rect key="frame" x="150" y="78" width="75" height="29"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ButtonBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-cI-RaD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ButtonBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-cI-RaD">
                                 <rect key="frame" x="63" y="634" width="249" height="83"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-s1-bgA">
@@ -83,8 +83,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ButtonBackground.png" width="249" height="83"/>
-        <image name="Notice.png" width="354" height="176"/>
-        <image name="think.png" width="75" height="29"/>
+        <image name="ButtonBackground" width="249" height="83"/>
+        <image name="Notice" width="354" height="176"/>
+        <image name="think" width="75" height="29"/>
     </resources>
 </document>
