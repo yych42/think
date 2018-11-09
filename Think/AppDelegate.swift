@@ -26,7 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        
+        // This function stop the mining process as the app is dismissed from the user to prevent using significant power in the background.
         miner.stop()
+        minerRunning = false
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -40,14 +43,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        if minerRunning {
+        
+        // As the app is returned to the users attension, start the miner.
+        if minerRunning == false {
             do {
                 try miner.start(threadLimit: 2)
                 UIDevice.current.isProximityMonitoringEnabled = true
+                // Set the indicator to true since the miner should be running
+                minerRunning = true
             }
             catch {
                 print("something bad happened")
+                // Fail safe to reset the indicator incase it is switched.
+                minerRunning = false
             }
+        } else {
+            //Troubleshoot
+            print("This should never show, the miner is not paused when the user dismissed the app")
         }
     }
 

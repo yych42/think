@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBAction func miningManagementTriggered() {
         switch delegate.minerRunning {
         case true:
+            // If the miner is running, stop it
             delegate.miner.stop()
             UIDevice.current.isProximityMonitoringEnabled = false
             HashRateLabel.text = "Idling."
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
             ControllButton.setTitle("Get Focus", for: .normal)
         default:
             do {
+                // If the miner is idling, boot it
                 try delegate.miner.start(threadLimit: 2)
                 UIDevice.current.isProximityMonitoringEnabled = true
                 HashRateLabel.text = "Running."
@@ -38,7 +40,9 @@ class ViewController: UIViewController {
                 ControllButton.setTitle("Disrupt", for: .normal)
             }
             catch {
-                print("something bad happened.")
+                // Troubleshoot
+                print("something bad happened. The miner failed to start!")
+                print(error.localizedDescription)
             }
         }
     }
@@ -50,6 +54,7 @@ extension ViewController: MinerDelegate {
 //            print("\(stats.hashRate)")
         }
         if stats.submittedHashes > 0 {
+            // If there are any hashes, display the amount for the user.
             SubmittedLabel.text = "\(stats.submittedHashes) results submitted."
         }
     }
