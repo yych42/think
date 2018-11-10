@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var ControllButton: UIButton!
     @IBOutlet weak var HashRateLabel: UILabel!
     @IBOutlet weak var SubmittedLabel: UILabel!
+    @IBOutlet weak var NoticeView: UIView!
     
     var countdownTimer: Timer!
     // Change this value to change the time for the countdown
@@ -66,6 +67,7 @@ class ViewController: UIViewController {
         delegate.miner.stop()
         UIDevice.current.isProximityMonitoringEnabled = false
         HashRateLabel.text = "Idling."
+        SubmittedLabel.isHidden = false
         delegate.minerRunning = false
         ControllButton.setTitle("Get Focus", for: .normal)
     }
@@ -75,6 +77,7 @@ class ViewController: UIViewController {
             try delegate.miner.start(threadLimit: 2)
             UIDevice.current.isProximityMonitoringEnabled = true
             HashRateLabel.text = "Running."
+            SubmittedLabel.isHidden = true
             delegate.minerRunning = true
             ControllButton.setTitle("Disrupt", for: .normal)
         }
