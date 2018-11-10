@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             }
             catch {
                 // Troubleshoot
-                print("something bad happened. The miner failed to start!")
+                print("The miner failed to start!")
                 print(error.localizedDescription)
             }
         }
