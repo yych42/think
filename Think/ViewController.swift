@@ -16,34 +16,72 @@ class ViewController: UIViewController {
     @IBOutlet weak var HashRateLabel: UILabel!
     @IBOutlet weak var SubmittedLabel: UILabel!
     
+    var countdownTimer: Timer!
+    // Change this value to change the time for the countdown
+    var totalTime = 1800
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    // Call this function whenever you want to start a 30 minutes scheduled focus session.
+    func startMinerWithTimer() {
+        startMiner()
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTime() {
+        if totalTime != 0 {
+            totalTime -= 1
+        } else {
+            endTimer()
+            stopMiner()
+        }
+    }
+    
+    func endTimer() {
+        countdownTimer.invalidate()
+    }
+    
+    func timeFormatted(_ totalSeconds: Int) -> String {
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+        //     let hours: Int = totalSeconds / 3600
+        return String(format: "%02d:%02d", minutes, seconds)
     }
     
     @IBAction func miningManagementTriggered() {
         switch delegate.minerRunning {
         case true:
             // If the miner is running, stop it
-            delegate.miner.stop()
-            UIDevice.current.isProximityMonitoringEnabled = false
-            HashRateLabel.text = "Idling."
-            delegate.minerRunning = false
-            ControllButton.setTitle("Get Focus", for: .normal)
+            stopMiner()
         default:
-            do {
-                // If the miner is idling, boot it
-                try delegate.miner.start(threadLimit: 2)
-                UIDevice.current.isProximityMonitoringEnabled = true
-                HashRateLabel.text = "Running."
-                delegate.minerRunning = true
-                ControllButton.setTitle("Disrupt", for: .normal)
-            }
-            catch {
-                // Troubleshoot
-                print("The miner failed to start!")
-                print(error.localizedDescription)
-            }
+            // If the miner is idling, boot it
+            startMiner()
+        }
+    }
+    
+    func stopMiner() {
+        delegate.miner.stop()
+        UIDevice.current.isProximityMonitoringEnabled = false
+        HashRateLabel.text = "Idling."
+        delegate.minerRunning = false
+        ControllButton.setTitle("Get Focus", for: .normal)
+    }
+    
+    func startMiner() {
+        do {
+            try delegate.miner.start(threadLimit: 2)
+            UIDevice.current.isProximityMonitoringEnabled = true
+            HashRateLabel.text = "Running."
+            delegate.minerRunning = true
+            ControllButton.setTitle("Disrupt", for: .normal)
+        }
+        catch {
+            // Troubleshoot
+            print("The miner failed to start!")
+            print(error.localizedDescription)
         }
     }
 }
