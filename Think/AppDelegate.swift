@@ -28,13 +28,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
         
         // This function stop the mining process as the app is dismissed from the user to prevent using significant power in the background.
-        miner.stop()
-        minerRunning = false
+        ViewController().stopMiner()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        if minerRunning {
+            ViewController().stopMiner()
+        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -44,27 +47,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         
-        // As the app is returned to the users attension, start the miner.
-        if minerRunning == false {
-            do {
-                try miner.start(threadLimit: 2)
-                UIDevice.current.isProximityMonitoringEnabled = true
-                // Set the indicator to true since the miner should be running
-                minerRunning = true
-            }
-            catch {
-                print("something bad happened")
-                // Fail safe to reset the indicator incase it is switched.
-                minerRunning = false
-            }
-        } else {
-            //Troubleshoot
-            print("This should never show, the miner is not paused when the user dismissed the app")
-        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
+        if minerRunning {
+            ViewController().stopMiner()
+        }
     }
 
 

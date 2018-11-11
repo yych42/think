@@ -59,7 +59,7 @@ class ViewController: UIViewController {
             stopMiner()
         default:
             // If the miner is idling, boot it
-            startMiner()
+            startMinerWithTimer()
         }
     }
     
@@ -70,6 +70,7 @@ class ViewController: UIViewController {
         SubmittedLabel.isHidden = false
         delegate.minerRunning = false
         ControllButton.setTitle("Get Focus", for: .normal)
+        print("Miner stopped")
     }
     
     func startMiner() {
@@ -80,6 +81,7 @@ class ViewController: UIViewController {
             SubmittedLabel.isHidden = true
             delegate.minerRunning = true
             ControllButton.setTitle("Disrupt", for: .normal)
+            print("Miner started")
         }
         catch {
             // Troubleshoot
