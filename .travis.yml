@@ -1,0 +1,5 @@
+language: swift
+xcode_project: Think.xcodeproj # path to your xcodeproj folder
+xcode_scheme: Think
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+osx_image: xcode10
