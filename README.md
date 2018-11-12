@@ -1,5 +1,7 @@
 # think - focus for good
------
+
+[![GitHub issues](https://img.shields.io/github/issues/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think/issues)
+[![GitHub license](https://img.shields.io/github/license/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think)
 
 ## Getting Started
 
