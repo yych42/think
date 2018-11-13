@@ -47,9 +47,8 @@ Please read [CONTRIBUTING.md](https://github.com/chen-yaoyu/think/blob/master/CO
 See also the list of [contributors](https://github.com/chen-yaoyu/think/contributors) who participated in this project.
 
 ## License
-    
-    Placeholder below, uncomment it if MIT License do apply
-    This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
