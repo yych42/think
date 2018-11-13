@@ -1,7 +1,6 @@
 # think - focus for good
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e001ed17835247dba27fadda2811f369)](https://app.codacy.com/app/chen-yaoyu/think?utm_source=github.com&utm_medium=referral&utm_content=chen-yaoyu/think&utm_campaign=Badge_Grade_Settings)
-[![Travis (.com)](https://img.shields.io/travis/com/:user/:repo.svg)](https://travis-ci.com/chen-yaoyu/think)
 [![GitHub issues](https://img.shields.io/github/issues/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think/issues)
 [![GitHub license](https://img.shields.io/github/license/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think)
 
