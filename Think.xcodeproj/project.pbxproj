@@ -49,6 +49,10 @@
 		B27918EA2197576E007418A6 /* SFCompactText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918C92197576E007418A6 /* SFCompactText-Heavy.otf */; };
 		B27918EB2197576E007418A6 /* SFCompactDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918CA2197576E007418A6 /* SFCompactDisplay-Black.otf */; };
 		B27918EC2197576E007418A6 /* SFCompactDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918CB2197576E007418A6 /* SFCompactDisplay-Light.otf */; };
+		B2BA3892219A50200010B41B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */; };
+		B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3893219A50200010B41B /* NSData_FastHex.framework */; };
+		B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3895219A50200010B41B /* ObjectMapper.framework */; };
+		B2BA3898219A50200010B41B /* XMRMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3897219A50200010B41B /* XMRMiner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +122,10 @@
 		B27918C92197576E007418A6 /* SFCompactText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Heavy.otf"; sourceTree = "<group>"; };
 		B27918CA2197576E007418A6 /* SFCompactDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Black.otf"; sourceTree = "<group>"; };
 		B27918CB2197576E007418A6 /* SFCompactDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Light.otf"; sourceTree = "<group>"; };
+		B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BA3893219A50200010B41B /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NSData_FastHex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BA3895219A50200010B41B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BA3897219A50200010B41B /* XMRMiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XMRMiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF847EBA8F21D286883AB519 /* Pods-Think.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Think/Pods-Think.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +134,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BA3892219A50200010B41B /* CocoaAsyncSocket.framework in Frameworks */,
+				B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */,
+				B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */,
+				B2BA3898219A50200010B41B /* XMRMiner.framework in Frameworks */,
 				81AAA711EC62C8F89446B9EF /* Pods_Think.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +274,10 @@
 		D6022657BFDE94356E9E57F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */,
+				B2BA3893219A50200010B41B /* NSData_FastHex.framework */,
+				B2BA3895219A50200010B41B /* ObjectMapper.framework */,
+				B2BA3897219A50200010B41B /* XMRMiner.framework */,
 				9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */,
 			);
 			name = Frameworks;
