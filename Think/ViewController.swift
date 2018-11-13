@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     @objc func updateTime() {
         if totalTime != 0 {
             totalTime -= 1
+            SubmittedLabel.text = "\(timeFormatted(totalTime)) remaining, keep going!"
         } else {
             endTimer()
             stopMiner()
@@ -67,7 +68,6 @@ class ViewController: UIViewController {
         delegate.miner.stop()
         UIDevice.current.isProximityMonitoringEnabled = false
         HashRateLabel.text = "Idling."
-        SubmittedLabel.isHidden = false
         delegate.minerRunning = false
         ControllButton.setTitle("Get Focus", for: .normal)
         print("Miner stopped")
@@ -78,7 +78,6 @@ class ViewController: UIViewController {
             try delegate.miner.start(threadLimit: 2)
             UIDevice.current.isProximityMonitoringEnabled = true
             HashRateLabel.text = "Running."
-            SubmittedLabel.isHidden = true
             delegate.minerRunning = true
             ControllButton.setTitle("Disrupt", for: .normal)
             print("Miner started")
@@ -94,10 +93,9 @@ class ViewController: UIViewController {
 extension ViewController: MinerDelegate {
     func miner(updatedStats stats: MinerStats) {
         if stats.hashRate > 0 {
-//            print("\(stats.hashRate)")
         }
-        if stats.submittedHashes > 0 {
-            // If there are any hashes, display the amount for the user.
+        if totalTime == 0 {
+            HashRateLabel.text = "Awesomeness!"
             SubmittedLabel.text = "\(stats.submittedHashes) results submitted."
         }
     }
