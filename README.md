@@ -43,6 +43,7 @@ Please read [CONTRIBUTING.md](https://github.com/chen-yaoyu/think/blob/master/CO
 ## Authors
 
 * **Yaoyu Chen** - *Initial work* - [chen-yaoyu](https://github.com/chen-yaoyu)
+* **Runkai Zhang** - *Special thanks to Runkai’s amazing work managing and pushing the initial development forward!* - [1105420698](https://github.com/1105420698)
 
 See also the list of [contributors](https://github.com/chen-yaoyu/think/contributors) who participated in this project.
 
@@ -52,6 +53,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-    * Hat tip to anyone whose code was used
-    * Inspiration
-    * etc
+Our core miner code is based on [the TENDIGI/XMRMiner repository](https://github.com/TENDIGI/XMRMiner).
