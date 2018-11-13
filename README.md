@@ -32,10 +32,6 @@ To Build:
 
 You can deploy this project onto any iOS devices that supports iOS 12 and above.
 
-## Built With
-
-    * Insert any library or framework used in this project here to site them!
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/chen-yaoyu/think/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
