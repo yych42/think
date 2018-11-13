@@ -1,6 +1,6 @@
 # think - focus for good
 
-[![GitHub (pre-)release](https://img.shields.io/github/release-pre/qubyte/rubidium.svg)](https://github.com/chen-yaoyu/think)
+[![Travis (.com)](https://img.shields.io/travis/com/:user/:repo.svg)](https://travis-ci.com/chen-yaoyu/think)
 [![GitHub issues](https://img.shields.io/github/issues/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think/issues)
 [![GitHub license](https://img.shields.io/github/license/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think)
 
