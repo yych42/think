@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var SubmittedLabel: UILabel!
     @IBOutlet weak var NoticeView: UIView!
     @IBOutlet weak var StartStopButton: UIButton!
+    var timerObject = Timer()
+    var timeLeft = Int()
+    var minerPaused = false
     
     var countdownTimer: Timer!
     // Change this value to change the time for the countdown
@@ -26,28 +29,35 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         if delegate.minerRunning {
-            stopMiner()
+            pauseMinerWithTimer()
         }
     }
     
     // Call this function whenever you want to start a 30 minutes scheduled focus session.
     func startMinerWithTimer() {
+        if minerPaused {
+            startMiner()
+            timerObject = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        }
         startMiner()
-        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        totalTime = 1800
+        timerObject = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    func pauseMinerWithTimer() {
+        minerPaused = true
+        stopMiner()
+        timerObject.invalidate()
     }
     
     @objc func updateTime() {
         if totalTime != 0 {
             totalTime -= 1
             SubmittedLabel.text = "\(timeFormatted(totalTime)) remaining, keep going!"
+            timeLeft = totalTime
         } else {
-            endTimer()
-            stopMiner()
+            pauseMinerWithTimer()
         }
-    }
-    
-    func endTimer() {
-        countdownTimer.invalidate()
     }
     
     func timeFormatted(_ totalSeconds: Int) -> String {
@@ -61,7 +71,7 @@ class ViewController: UIViewController {
         switch delegate.minerRunning {
         case true:
             // If the miner is running, stop it
-            stopMiner()
+            pauseMinerWithTimer()
         default:
             // If the miner is idling, boot it
             startMinerWithTimer()
@@ -69,12 +79,14 @@ class ViewController: UIViewController {
     }
     
     func stopMiner() {
-        HashRateLabel.text = "Idling."
         delegate.miner.stop()
         UIDevice.current.isProximityMonitoringEnabled = false
         delegate.minerRunning = false
-        StartStopButton.setTitle("Get Focus", for: .normal)
-        print("Miner stopped")
+        if minerPaused {
+            HashRateLabel.text = "Paused"
+            StartStopButton.setTitle("Resume", for: .normal)
+        }
+        print("Miner paused")
     }
     
     func startMiner() {
