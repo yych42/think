@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
         
         // This function stop the mining process as the app is dismissed from the user to prevent using significant power in the background.
-        stopMiner()
+        stopMinerWithTimer()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         
         if minerRunning {
-            stopMiner()
+            stopMinerWithTimer()
         }
     }
 
@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         
         if minerRunning {
-            stopMiner()
+            stopMinerWithTimer()
         }
     }
     
@@ -61,7 +61,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         miner.stop()
         UIDevice.current.isProximityMonitoringEnabled = false
         minerRunning = false
-        print("Miner stopped")
+        print("Miner paused")
+    }
+    
+    private func stopMinerWithTimer() {
+        stopMiner()
+        ViewController().timerObject.invalidate()
     }
 }
 
