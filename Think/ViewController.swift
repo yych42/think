@@ -12,10 +12,10 @@ import XMRMiner
 class ViewController: UIViewController {
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
-    @IBOutlet weak var ControllButton: UIButton!
     @IBOutlet weak var HashRateLabel: UILabel!
     @IBOutlet weak var SubmittedLabel: UILabel!
     @IBOutlet weak var NoticeView: UIView!
+    @IBOutlet weak var StartStopButton: UIButton!
     
     var countdownTimer: Timer!
     // Change this value to change the time for the countdown
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         return String(format: "%02d:%02d", minutes, seconds)
     }
     
-    @IBAction func miningManagementTriggered() {
+    @IBAction func miningTriggered(_ sender: Any) {
         switch delegate.minerRunning {
         case true:
             // If the miner is running, stop it
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         UIDevice.current.isProximityMonitoringEnabled = false
         HashRateLabel.text = "Idling."
         delegate.minerRunning = false
-        ControllButton.setTitle("Get Focus", for: .normal)
+        StartStopButton.setTitle("Get Focus", for: .normal)
         print("Miner stopped")
     }
     
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
             UIDevice.current.isProximityMonitoringEnabled = true
             HashRateLabel.text = "Running."
             delegate.minerRunning = true
-            ControllButton.setTitle("Disrupt", for: .normal)
+            StartStopButton.setTitle("Disrupt", for: .normal)
             print("Miner started")
         }
         catch {
