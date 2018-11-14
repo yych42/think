@@ -15,6 +15,7 @@
 		9FE66AB9218EDD56005E9830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE66AB7218EDD56005E9830 /* LaunchScreen.storyboard */; };
 		9FE66AC4218EDD56005E9830 /* ThinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66AC3218EDD56005E9830 /* ThinkTests.swift */; };
 		9FE66ACF218EDD56005E9830 /* ThinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66ACE218EDD56005E9830 /* ThinkUITests.swift */; };
+		B21D7082219BB49000610A55 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D7081219BB49000610A55 /* ButtonView.swift */; };
 		B264461E219751A80085CC8B /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264461D219751A80085CC8B /* NoticeView.swift */; };
 		B27918CC2197576E007418A6 /* SFCompactDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AB2197576C007418A6 /* SFCompactDisplay-Ultralight.otf */; };
 		B27918CD2197576E007418A6 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AC2197576C007418A6 /* SF-Pro-Text-Semibold.otf */; };
@@ -88,6 +89,7 @@
 		9FE66ACE218EDD56005E9830 /* ThinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkUITests.swift; sourceTree = "<group>"; };
 		9FE66AD0218EDD56005E9830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Think.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21D7081219BB49000610A55 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B264461D219751A80085CC8B /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		B27918AB2197576C007418A6 /* SFCompactDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Ultralight.otf"; sourceTree = "<group>"; };
 		B27918AC2197576C007418A6 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -196,7 +198,7 @@
 				9FE66AAE218EDD54005E9830 /* AppDelegate.swift */,
 				9FE66AB0218EDD54005E9830 /* ViewController.swift */,
 				9FE66AB2218EDD54005E9830 /* Main.storyboard */,
-				B27918EE219757C7007418A6 /* Views */,
+				B27918EE219757C7007418A6 /* Objects */,
 				B27918ED21975797007418A6 /* Fonts */,
 				9FE66AB5218EDD56005E9830 /* Assets.xcassets */,
 				9FE66AB7218EDD56005E9830 /* LaunchScreen.storyboard */,
@@ -263,12 +265,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		B27918EE219757C7007418A6 /* Views */ = {
+		B27918EE219757C7007418A6 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
 				B264461D219751A80085CC8B /* NoticeView.swift */,
+				B21D7081219BB49000610A55 /* ButtonView.swift */,
 			);
-			path = Views;
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		D6022657BFDE94356E9E57F8 /* Frameworks */ = {
@@ -504,6 +507,7 @@
 			files = (
 				B264461E219751A80085CC8B /* NoticeView.swift in Sources */,
 				9FE66AB1218EDD54005E9830 /* ViewController.swift in Sources */,
+				B21D7082219BB49000610A55 /* ButtonView.swift in Sources */,
 				9FE66AAF218EDD54005E9830 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

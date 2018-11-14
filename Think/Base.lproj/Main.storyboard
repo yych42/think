@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9rounded" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,6 +13,9 @@
         <array key="SF-Pro-Text-Bold.otf">
             <string>SFProText-Bold</string>
         </array>
+        <array key="SF-Pro-Text-Heavy.otf">
+            <string>SFProText-Heavy</string>
+        </array>
         <array key="SF-Pro-Text-Regular.otf">
             <string>SFProText-Regular</string>
         </array>
@@ -23,33 +26,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Think" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ButtonBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-cI-RaD">
-                                <rect key="frame" x="387.5" y="1202" width="249" height="83"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-s1-bgA">
-                                <rect key="frame" x="465.5" y="1219" width="93" height="36"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
-                                <state key="normal" title="Get Focus">
-                                    <color key="titleColor" red="1" green="0.35176416032465752" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="miningManagementTriggered" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pah-Bv-GWH"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ss7-0a-rcf" customClass="NoticeView" customModule="Think" customModuleProvider="target">
-                                <rect key="frame" x="27" y="134" width="970" height="142"/>
+                                <rect key="frame" x="27" y="154" width="321" height="142"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think better, together." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-3t-OEE">
-                                        <rect key="frame" x="20" y="17" width="227" height="24"/>
+                                        <rect key="frame" x="19.999999999999986" y="17" width="226.66666666666663" height="24"/>
                                         <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="20"/>
                                         <color key="textColor" red="0.76078431372549016" green="0.79607843137254897" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Put down your phone for 30 minutes.            You get to find your focus, and your              phone computes to save lives." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-EP-KPX">
-                                        <rect key="frame" x="16" y="49" width="905" height="85"/>
+                                        <rect key="frame" x="16" y="49" width="256" height="85"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -66,10 +56,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-9U-gkb">
-                                <rect key="frame" x="395.5" y="391" width="233" height="53.5"/>
+                                <rect key="frame" x="71" y="411" width="233" height="53.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idling." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPX-xn-XTv">
-                                        <rect key="frame" x="0.0" y="0.0" width="233" height="32.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="32.666666666666664"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="IWl-DT-uuK"/>
                                         </constraints>
@@ -78,7 +68,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start a focus session now!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anc-JN-egO">
-                                        <rect key="frame" x="0.0" y="32.5" width="233" height="21"/>
+                                        <rect key="frame" x="0.0" y="32.666666666666686" width="233" height="21"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
                                         <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -89,7 +79,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="think." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixB-7U-rOc">
-                                <rect key="frame" x="462" y="72" width="100" height="38"/>
+                                <rect key="frame" x="137.66666666666666" y="92" width="100" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7zX-ct-vIX"/>
                                 </constraints>
@@ -97,20 +87,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhN-Lg-VgI" customClass="ButtonView" customModule="Think" customModuleProvider="target">
+                                <rect key="frame" x="80" y="645" width="215" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="CWi-EK-51I"/>
+                                    <constraint firstAttribute="height" constant="50" id="PJ1-xL-SDt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Heavy" family="SF Pro Text" pointSize="18"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Get Focus">
+                                    <color key="titleColor" red="0.93086320161819458" green="0.48187887668609619" blue="0.54111725091934204" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="miningTriggered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5sc-cY-qb7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ixB-7U-rOc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3XW-ET-hcq"/>
                             <constraint firstItem="Ss7-0a-rcf" firstAttribute="top" secondItem="ixB-7U-rOc" secondAttribute="bottom" constant="24" id="3qd-i9-fSy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BzA-s1-bgA" secondAttribute="bottom" constant="91" id="4F1-yA-v4F"/>
                             <constraint firstItem="lEO-9U-gkb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9YG-7n-8Zm"/>
+                            <constraint firstItem="bhN-Lg-VgI" firstAttribute="top" secondItem="lEO-9U-gkb" secondAttribute="bottom" constant="180.33000000000001" id="AJe-wz-0YC"/>
                             <constraint firstItem="ixB-7U-rOc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GHq-dG-GpF"/>
                             <constraint firstItem="lEO-9U-gkb" firstAttribute="top" secondItem="Ss7-0a-rcf" secondAttribute="bottom" constant="115" id="JQk-U4-2ZQ"/>
-                            <constraint firstItem="nhM-cI-RaD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VFR-iF-XPZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nhM-cI-RaD" secondAttribute="bottom" constant="61" id="crT-ZN-z6B"/>
+                            <constraint firstItem="bhN-Lg-VgI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dut-bS-9Wb"/>
                             <constraint firstItem="Ss7-0a-rcf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h0e-3f-8Vy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ss7-0a-rcf" secondAttribute="trailing" constant="27" id="icW-w2-sJ0"/>
-                            <constraint firstItem="BzA-s1-bgA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kel-rY-QLt"/>
                             <constraint firstItem="Ss7-0a-rcf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="omQ-i8-EMg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ixB-7U-rOc" secondAttribute="trailing" id="skp-aE-Vo6"/>
                             <constraint firstItem="ixB-7U-rOc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="wEU-cJ-u5h"/>
@@ -118,9 +121,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="ControllButton" destination="BzA-s1-bgA" id="rVl-XV-j04"/>
                         <outlet property="HashRateLabel" destination="MPX-xn-XTv" id="LMR-Tk-acC"/>
                         <outlet property="NoticeView" destination="Ss7-0a-rcf" id="iPy-vZ-6nu"/>
+                        <outlet property="StartStopButton" destination="bhN-Lg-VgI" id="Thf-cX-9Ob"/>
                         <outlet property="SubmittedLabel" destination="anc-JN-egO" id="DdZ-Ja-ZqC"/>
                     </connections>
                 </viewController>
@@ -129,7 +132,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="127.83251231527095"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ButtonBackground" width="249" height="83"/>
-    </resources>
 </document>
