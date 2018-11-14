@@ -38,7 +38,7 @@ Please read [CONTRIBUTING.md](https://github.com/chen-yaoyu/think/blob/master/CO
 
 ## Authors
 
-* [**Yaoyu Chen**](https://yaoyuchen.xyz) - *Initial work* - [chen-yaoyu](https://github.com/chen-yaoyu)
+* [**Yaoyu Chen**](https://yaoyuchen.xyz) - *Initial work, and the leader who dominant over every other contributors!* - [chen-yaoyu](https://github.com/chen-yaoyu)
 * [**Runkai Zhang**](https://runkaizhang.xyz) - *Special thanks to Runkai’s amazing work managing and pushing the initial development forward!* - [1105420698](https://github.com/1105420698)
 
 See also the list of [contributors](https://github.com/chen-yaoyu/think/contributors) who participated in this project.
