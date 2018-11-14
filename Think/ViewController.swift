@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if delegate.minerRunning {
+            stopMiner()
+        }
     }
     
     // Call this function whenever you want to start a 30 minutes scheduled focus session.
@@ -65,9 +69,9 @@ class ViewController: UIViewController {
     }
     
     func stopMiner() {
+        HashRateLabel.text = "Idling."
         delegate.miner.stop()
         UIDevice.current.isProximityMonitoringEnabled = false
-        HashRateLabel.text = "Idling."
         delegate.minerRunning = false
         StartStopButton.setTitle("Get Focus", for: .normal)
         print("Miner stopped")
