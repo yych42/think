@@ -23,7 +23,7 @@ Xcode 10:
 ### Building
 
 To Build: 
-1. make sure [cocoapods](https://cocoapods.org) is installed.
+1. make sure [CocoaPods](https://cocoapods.org) is installed.
 2. open the workspace file, not the project file.
 3. change the project signing accordingly.
 4. build and run.
@@ -38,8 +38,8 @@ Please read [CONTRIBUTING.md](https://github.com/chen-yaoyu/think/blob/master/CO
 
 ## Authors
 
-* **Yaoyu Chen** - *Initial work* - [chen-yaoyu](https://github.com/chen-yaoyu)
-* **Runkai Zhang** - *Special thanks to Runkai’s amazing work managing and pushing the initial development forward!* - [1105420698](https://github.com/1105420698)
+* [**Yaoyu Chen**](https://yaoyuchen.xyz) - *Initial work* - [chen-yaoyu](https://github.com/chen-yaoyu)
+* [**Runkai Zhang**](https://runkaizhang.xyz) - *Special thanks to Runkai’s amazing work managing and pushing the initial development forward!* - [1105420698](https://github.com/1105420698)
 
 See also the list of [contributors](https://github.com/chen-yaoyu/think/contributors) who participated in this project.
 
