@@ -16,7 +16,8 @@ A mac:
 Up to this point I think you already have a mac, but just in case, you are required to have a mac in order to compile this project!
 
 Xcode 10:
-1. Go to Appstore on your mac.
+1. Go to App Store on your mac.
+  * Alternatively use this [link](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) for quicker access.
 2. In the search bar, type "xcode" and hit enter.
 3. Install Xcode by clicking on the "Get" or "Install" button next to the Xcode section.
 
