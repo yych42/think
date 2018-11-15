@@ -12,7 +12,7 @@ class NoticeView: UIView {
 
     private var shadowLayer: CAShapeLayer!
     private var cornerRadius: CGFloat = 10
-    private var fillColor: UIColor = .white // the color applied to the shadowLayer, rather than the view's backgroundColor
+    private var fillColor: UIColor = .white
     
     override func layoutSubviews() {
         super.layoutSubviews()

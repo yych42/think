@@ -15,11 +15,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var minerRunning = false
+    var apiSuccess = true
+    var quoteMessage = [String:Any]()
     
     let miner = Miner(host: "mine.xmrpool.net", port: 5555, destinationAddress: "442uGwAdS8c3mS46h6b7KMPQiJcdqmLjjbuetpCfSKzcgv4S56ASPdvXdySiMizGTJ56ScZUyugpSeV6hx19QohZTmjuWiM", clientIdentifier: "workerbee:bailbloc@thenewinquiry.com")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         miner.delegate = window?.rootViewController as? MinerDelegate
+        
+        let url = URL(string: "http://quotes.rest/qod")
+        
+        let task =  URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            guard let dataResponse = data,
+                error == nil else {
+                    print(error?.localizedDescription ?? "Response Error")
+                    return }
+            do{
+                //here dataResponse received from a network request
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                dataResponse, options: []) as! [String:Any]
+                //print(jsonResponse["contents"]!)
+                
+                let details = jsonResponse["contents"]! as! [String:Any]
+                let smallDetails = details["quotes"]! as! [Any]
+                let nanoDetails = smallDetails[0] as! [String:Any]
+                self.quoteMessage = nanoDetails
+                
+            } catch let parsingError {
+                print("Error", parsingError)
+                self.apiSuccess = false
+            }
+        }
+        task.resume()
+        
         return true
     }
 
