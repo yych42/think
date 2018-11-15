@@ -16,9 +16,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var SubmittedLabel: UILabel!
     @IBOutlet weak var NoticeView: UIView!
     @IBOutlet weak var StartStopButton: UIButton!
+    @IBOutlet weak var noticeMain: UITextView!
+    @IBOutlet weak var NoticeHeader: UILabel!
+    @IBOutlet weak var credit: UILabel!
+    
     var timerObject = Timer()
     var timeLeft = Int()
     var minerPaused = false
+    var isDefault = true
     
     var countdownTimer: Timer!
     // Change this value to change the time for the countdown
@@ -27,9 +32,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        credit.text = ""
         
         if delegate.minerRunning {
             pauseMinerWithTimer()
+        }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        NoticeView.addGestureRecognizer(tap)
+        NoticeView.isUserInteractionEnabled = true
+    }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        if isDefault {
+            isDefault = false
+            
+            if delegate.apiSuccess {
+                let quote = delegate.quoteMessage["quote"] as? String
+                let author = delegate.quoteMessage["author"] as? String
+                let message = quote! + " - " + author!
+                noticeMain.text = message
+                NoticeHeader.text = delegate.quoteMessage["title"] as? String
+                credit.text = "Quotes information provided by They Said So"
+                UIView.transition(with: NoticeView, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+            } else {
+                NoticeHeader.text = "Oops! Something is wrong!"
+                noticeMain.text = "Something is wrong with the API"
+            }
+        } else {
+            isDefault = true
+            credit.text = ""
+            noticeMain.text = "Put down your phone for 30 minutes.            You get to find your focus, and your              phone computes to save lives."
+            NoticeHeader.text = "Think better, together."
+            UIView.transition(with: NoticeView, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
         }
     }
     
