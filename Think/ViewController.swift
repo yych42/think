@@ -73,10 +73,11 @@ class ViewController: UIViewController {
         if minerPaused {
             startMiner()
             timerObject = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        } else {
+            startMiner()
+            totalTime = 1800
+            timerObject = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         }
-        startMiner()
-        totalTime = 1800
-        timerObject = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
     func pauseMinerWithTimer() {
@@ -87,11 +88,13 @@ class ViewController: UIViewController {
     
     @objc func updateTime() {
         if totalTime != 0 {
-            totalTime -= 1
-            SubmittedLabel.text = "\(timeFormatted(totalTime)) remaining, keep going!"
-            timeLeft = totalTime
+            if minerPaused != true {
+                totalTime -= 1
+                SubmittedLabel.text = "\(timeFormatted(totalTime)) remaining, keep going!"
+                timeLeft = totalTime
+            }
         } else {
-            pauseMinerWithTimer()
+            stopMiner()
         }
     }
     
@@ -126,6 +129,7 @@ class ViewController: UIViewController {
     
     func startMiner() {
         do {
+            minerPaused = false
             try delegate.miner.start(threadLimit: 2)
             UIDevice.current.isProximityMonitoringEnabled = true
             HashRateLabel.text = "Running."
