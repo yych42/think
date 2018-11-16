@@ -16,9 +16,6 @@
         <array key="SF-Pro-Text-Heavy.otf">
             <string>SFProText-Heavy</string>
         </array>
-        <array key="SF-Pro-Text-Regular.otf">
-            <string>SFProText-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -38,25 +35,25 @@
                                         <color key="textColor" red="0.76078431372549016" green="0.79607843137254897" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Put down your phone for 30 minutes.            You get to find your focus, and your              phone computes to save lives." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-EP-KPX">
-                                        <rect key="frame" x="16" y="49" width="256" height="85"/>
-                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M33-Ry-bki">
                                         <rect key="frame" x="8" y="120" width="305" height="14"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBc-y1-q6q">
+                                        <rect key="frame" x="19" y="49" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="pdk-EP-KPX" secondAttribute="bottom" constant="8" id="3X0-22-TeK"/>
                                     <constraint firstItem="nBX-3t-OEE" firstAttribute="leading" secondItem="Ss7-0a-rcf" secondAttribute="leading" constant="20" id="5Q0-QL-sUT"/>
                                     <constraint firstAttribute="bottom" secondItem="M33-Ry-bki" secondAttribute="bottom" constant="8" id="5XP-sf-RxD"/>
-                                    <constraint firstAttribute="trailing" secondItem="pdk-EP-KPX" secondAttribute="trailing" constant="49" id="G0z-Fl-89H"/>
-                                    <constraint firstItem="pdk-EP-KPX" firstAttribute="leading" secondItem="Ss7-0a-rcf" secondAttribute="leading" constant="16" id="KIo-XS-nhZ"/>
-                                    <constraint firstItem="pdk-EP-KPX" firstAttribute="top" secondItem="nBX-3t-OEE" secondAttribute="bottom" constant="8" id="Oe2-gX-syy"/>
+                                    <constraint firstItem="UBc-y1-q6q" firstAttribute="leading" secondItem="Ss7-0a-rcf" secondAttribute="leading" constant="19" id="CT4-n0-EcX"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UBc-y1-q6q" secondAttribute="trailing" constant="20" symbolic="YES" id="W6T-rl-jDX"/>
+                                    <constraint firstItem="UBc-y1-q6q" firstAttribute="top" secondItem="nBX-3t-OEE" secondAttribute="bottom" constant="8" symbolic="YES" id="hX6-aY-U9j"/>
                                     <constraint firstItem="nBX-3t-OEE" firstAttribute="top" secondItem="Ss7-0a-rcf" secondAttribute="top" constant="17" id="hqh-bI-HXK"/>
                                     <constraint firstAttribute="height" constant="142" id="jb9-Nc-NmK"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nBX-3t-OEE" secondAttribute="trailing" constant="20" symbolic="YES" id="uvD-lp-Mjw"/>
@@ -136,7 +133,7 @@
                         <outlet property="StartStopButton" destination="bhN-Lg-VgI" id="Thf-cX-9Ob"/>
                         <outlet property="SubmittedLabel" destination="anc-JN-egO" id="DdZ-Ja-ZqC"/>
                         <outlet property="credit" destination="M33-Ry-bki" id="rWd-ri-DQ3"/>
-                        <outlet property="noticeMain" destination="pdk-EP-KPX" id="x3l-xX-2Cj"/>
+                        <outlet property="noticeMain" destination="UBc-y1-q6q" id="TmI-t0-dp6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
