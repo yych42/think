@@ -90,6 +90,7 @@
 		9FE66AD0218EDD56005E9830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Think.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21D7081219BB49000610A55 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B240D1C3219E4D16007DD5CA /* Futura Heavy Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Heavy Oblique.otf"; sourceTree = "<group>"; };
 		B264461D219751A80085CC8B /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		B27918AB2197576C007418A6 /* SFCompactDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Ultralight.otf"; sourceTree = "<group>"; };
 		B27918AC2197576C007418A6 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -261,6 +262,7 @@
 				B27918BD2197576D007418A6 /* SFCompactText-RegularItalic.otf */,
 				B27918B22197576C007418A6 /* SFCompactText-Semibold.otf */,
 				B27918B52197576D007418A6 /* SFCompactText-SemiboldItalic.otf */,
+				B240D1C3219E4D16007DD5CA /* Futura Heavy Oblique.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";

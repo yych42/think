@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var SubmittedLabel: UILabel!
     @IBOutlet weak var NoticeView: UIView!
     @IBOutlet weak var StartStopButton: UIButton!
-    @IBOutlet weak var noticeMain: UITextView!
+    @IBOutlet weak var noticeMain: UILabel!
     @IBOutlet weak var NoticeHeader: UILabel!
     @IBOutlet weak var credit: UILabel!
     
@@ -41,6 +41,18 @@ class ViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         NoticeView.addGestureRecognizer(tap)
         NoticeView.isUserInteractionEnabled = true
+        
+        view.frame = CGRect(x: 0, y: 0, width: 267, height: 66)
+        view.backgroundColor = .white
+        self.view = view
+        
+        noticeMain.textColor = UIColor(red: 0.2, green: 0.23, blue: 0.26, alpha: 1)
+        noticeMain.font = UIFont(name: "GillSans-SemiBold", size: 15)
+        noticeMain.numberOfLines = 0
+        noticeMain.lineBreakMode = .byWordWrapping
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 4
+        noticeMain.attributedText = NSMutableAttributedString(string: "Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
