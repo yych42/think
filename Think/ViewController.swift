@@ -10,7 +10,9 @@ import UIKit
 import XMRMiner
 
 class ViewController: UIViewController {
+    
     let delegate = UIApplication.shared.delegate as! AppDelegate
+    let network: NetworkManager = NetworkManager.sharedInstance
     @IBOutlet weak var HashRateLabel: UILabel!
     @IBOutlet weak var SubmittedLabel: UILabel!
     @IBOutlet weak var NoticeView: UIView!
@@ -31,6 +33,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        NetworkManager.isUnreachable { _ in
+            self.showOfflinePage()
+        }
+        
         credit.text = ""
         
         if delegate.minerRunning {
@@ -52,6 +58,16 @@ class ViewController: UIViewController {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
         noticeMain.attributedText = NSMutableAttributedString(string: "Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+        
+        network.reachability.whenUnreachable = { reachability in
+            self.showOfflinePage()
+        }
+    }
+    
+    private func showOfflinePage() -> Void {
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "NetworkUnavailable", sender: self)
+        }
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {

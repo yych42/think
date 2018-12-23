@@ -42,7 +42,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBc-y1-q6q">
-                                        <rect key="frame" x="19" y="49" width="42" height="21"/>
+                                        <rect key="frame" x="18.999999999999996" y="49" width="41.666666666666657" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -134,11 +134,54 @@
                         <outlet property="SubmittedLabel" destination="anc-JN-egO" id="DdZ-Ja-ZqC"/>
                         <outlet property="credit" destination="M33-Ry-bki" id="rWd-ri-DQ3"/>
                         <outlet property="noticeMain" destination="UBc-y1-q6q" id="TmI-t0-dp6"/>
+                        <segue destination="1Xe-kK-Lf1" kind="show" identifier="NetworkUnavailable" id="6Ym-gG-tz5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="127.83251231527095"/>
         </scene>
+        <!--Offline View Controller-->
+        <scene sceneID="CbW-Hy-xw2">
+            <objects>
+                <viewController id="1Xe-kK-Lf1" customClass="OfflineViewController" customModule="Think" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MSL-JA-NtN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offline" translatesAutoresizingMaskIntoConstraints="NO" id="dSc-e9-Pht">
+                                <rect key="frame" x="87.666666666666686" y="231" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9RY-NR-C0K"/>
+                                    <constraint firstAttribute="height" constant="200" id="UAn-GT-IvC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are offline, please connect to a network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfr-eM-V0P">
+                                <rect key="frame" x="20" y="439" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zfr-eM-V0P" firstAttribute="centerX" secondItem="MSL-JA-NtN" secondAttribute="centerX" id="A5R-Kd-i5u"/>
+                            <constraint firstItem="dSc-e9-Pht" firstAttribute="centerY" secondItem="MSL-JA-NtN" secondAttribute="centerY" constant="-75" id="J3y-B6-FZd"/>
+                            <constraint firstItem="dSc-e9-Pht" firstAttribute="centerX" secondItem="MSL-JA-NtN" secondAttribute="centerX" id="XRf-eG-haT"/>
+                            <constraint firstItem="zfr-eM-V0P" firstAttribute="centerY" secondItem="MSL-JA-NtN" secondAttribute="centerY" constant="43.5" id="dit-J9-6wk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gMI-YQ-vlu"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="MainController" id="jvr-cA-hlO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCc-wX-0aP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="127.83251231527095"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="offline" width="90" height="90"/>
+    </resources>
 </document>
