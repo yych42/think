@@ -10,11 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SF-Pro-Text-Bold.otf">
-            <string>SFProText-Bold</string>
-        </array>
-        <array key="SF-Pro-Text-Heavy.otf">
-            <string>SFProText-Heavy</string>
+        <array key="Futura Heavy Oblique.otf">
+            <string>Futura-HeavyOblique</string>
         </array>
     </customFonts>
     <scenes>
@@ -27,22 +24,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ss7-0a-rcf" customClass="NoticeView" customModule="Think" customModuleProvider="target">
-                                <rect key="frame" x="27" y="154" width="321" height="142"/>
+                                <rect key="frame" x="27" y="157.66666666666666" width="321" height="141.99999999999997"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think better, together." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-3t-OEE">
-                                        <rect key="frame" x="19.999999999999986" y="17" width="226.66666666666663" height="24"/>
-                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="20"/>
+                                        <rect key="frame" x="20" y="17" width="215.66666666666666" height="23.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
                                         <color key="textColor" red="0.76078431372549016" green="0.79607843137254897" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M33-Ry-bki">
-                                        <rect key="frame" x="8" y="120" width="305" height="14"/>
+                                        <rect key="frame" x="8" y="120.00000000000003" width="305" height="14"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBc-y1-q6q">
+
                                         <rect key="frame" x="18.999999999999996" y="49" width="41.666666666666657" height="20.333333333333329"/>
+                                      
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -62,7 +61,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-9U-gkb">
-                                <rect key="frame" x="71" y="411" width="233" height="53.666666666666686"/>
+                                <rect key="frame" x="71" y="414.66666666666669" width="233" height="53.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idling." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPX-xn-XTv">
                                         <rect key="frame" x="0.0" y="0.0" width="233" height="32.666666666666664"/>
@@ -74,7 +73,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start a focus session now!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anc-JN-egO">
-                                        <rect key="frame" x="0.0" y="32.666666666666686" width="233" height="21"/>
+                                        <rect key="frame" x="0.0" y="32.666666666666629" width="233" height="21"/>
                                         <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
                                         <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -85,21 +84,21 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="think." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixB-7U-rOc">
-                                <rect key="frame" x="137.66666666666666" y="92" width="100" height="38"/>
+                                <rect key="frame" x="137.66666666666666" y="92" width="100" height="41.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7zX-ct-vIX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="29"/>
+                                <fontDescription key="fontDescription" name="Futura-HeavyOblique" family="Futura" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhN-Lg-VgI" customClass="ButtonView" customModule="Think" customModuleProvider="target">
-                                <rect key="frame" x="80" y="645" width="215" height="50"/>
+                                <rect key="frame" x="80" y="648.66666666666663" width="215" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="CWi-EK-51I"/>
                                     <constraint firstAttribute="height" constant="50" id="PJ1-xL-SDt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFProText-Heavy" family="SF Pro Text" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="Get Focus">
                                     <color key="titleColor" red="0.93086320161819458" green="0.48187887668609619" blue="0.54111725091934204" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

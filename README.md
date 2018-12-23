@@ -16,14 +16,15 @@ A mac:
 Up to this point I think you already have a mac, but just in case, you are required to have a mac in order to compile this project!
 
 Xcode 10:
-1. Go to Appstore on your mac.
+1. Go to App Store on your mac.
+  * Alternatively use this [link](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) for quicker access.
 2. In the search bar, type "xcode" and hit enter.
 3. Install Xcode by clicking on the "Get" or "Install" button next to the Xcode section.
 
 ### Building
 
 To Build: 
-1. make sure [cocoapods](https://cocoapods.org) is installed.
+1. make sure [CocoaPods](https://cocoapods.org) is installed.
 2. open the workspace file, not the project file.
 3. change the project signing accordingly.
 4. build and run.
@@ -38,8 +39,8 @@ Please read [CONTRIBUTING.md](https://github.com/chen-yaoyu/think/blob/master/CO
 
 ## Authors
 
-* **Yaoyu Chen** - *Initial work* - [chen-yaoyu](https://github.com/chen-yaoyu)
-* **Runkai Zhang** - *Special thanks to Runkai’s amazing work managing and pushing the initial development forward!* - [1105420698](https://github.com/1105420698)
+* [**Yaoyu Chen**](https://yaoyuchen.xyz) - *Initial work, and the leader who dominant over every other contributors!* - [chen-yaoyu](https://github.com/chen-yaoyu)
+* [**Runkai Zhang**](https://runkaizhang.xyz) - *Special thanks to Runkai’s amazing work managing and pushing the initial development forward!* - [1105420698](https://github.com/1105420698)
 
 See also the list of [contributors](https://github.com/chen-yaoyu/think/contributors) who participated in this project.
 
