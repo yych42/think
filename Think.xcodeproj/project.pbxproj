@@ -16,6 +16,8 @@
 		9FE66AC4218EDD56005E9830 /* ThinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66AC3218EDD56005E9830 /* ThinkTests.swift */; };
 		9FE66ACF218EDD56005E9830 /* ThinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66ACE218EDD56005E9830 /* ThinkUITests.swift */; };
 		B21D7082219BB49000610A55 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D7081219BB49000610A55 /* ButtonView.swift */; };
+		B23DB4DD21CF273400D2EB99 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DB4DC21CF273400D2EB99 /* NetworkManager.swift */; };
+		B23DB4DF21CF29FB00D2EB99 /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DB4DE21CF29FB00D2EB99 /* OfflineViewController.swift */; };
 		B264461E219751A80085CC8B /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264461D219751A80085CC8B /* NoticeView.swift */; };
 		B27918CC2197576E007418A6 /* SFCompactDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AB2197576C007418A6 /* SFCompactDisplay-Ultralight.otf */; };
 		B27918CD2197576E007418A6 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AC2197576C007418A6 /* SF-Pro-Text-Semibold.otf */; };
@@ -90,6 +92,8 @@
 		9FE66AD0218EDD56005E9830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Think.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21D7081219BB49000610A55 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B23DB4DC21CF273400D2EB99 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B23DB4DE21CF29FB00D2EB99 /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
 		B240D1C3219E4D16007DD5CA /* Futura Heavy Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Heavy Oblique.otf"; sourceTree = "<group>"; };
 		B264461D219751A80085CC8B /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		B27918AB2197576C007418A6 /* SFCompactDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Ultralight.otf"; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		B27918C92197576E007418A6 /* SFCompactText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Heavy.otf"; sourceTree = "<group>"; };
 		B27918CA2197576E007418A6 /* SFCompactDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Black.otf"; sourceTree = "<group>"; };
 		B27918CB2197576E007418A6 /* SFCompactDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Light.otf"; sourceTree = "<group>"; };
+		B27F73BA21B886E800CF7796 /* Think.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Think.entitlements; sourceTree = "<group>"; };
 		B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3893219A50200010B41B /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NSData_FastHex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3895219A50200010B41B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,10 +201,13 @@
 		9FE66AAD218EDD54005E9830 /* Think */ = {
 			isa = PBXGroup;
 			children = (
+				B27F73BA21B886E800CF7796 /* Think.entitlements */,
 				9FE66AAE218EDD54005E9830 /* AppDelegate.swift */,
 				9FE66AB0218EDD54005E9830 /* ViewController.swift */,
+				B23DB4DE21CF29FB00D2EB99 /* OfflineViewController.swift */,
 				9FE66AB2218EDD54005E9830 /* Main.storyboard */,
 				B27918EE219757C7007418A6 /* Objects */,
+				B23DB4DC21CF273400D2EB99 /* NetworkManager.swift */,
 				B27918ED21975797007418A6 /* Fonts */,
 				9FE66AB5218EDD56005E9830 /* Assets.xcassets */,
 				9FE66AB7218EDD56005E9830 /* LaunchScreen.storyboard */,
@@ -358,6 +366,11 @@
 				TargetAttributes = {
 					9FE66AAA218EDD53005E9830 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					9FE66ABE218EDD56005E9830 = {
 						CreatedOnToolsVersion = 10.1;
@@ -460,6 +473,7 @@
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/NSData+FastHex/NSData_FastHex.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/XMRMiner/XMRMiner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -467,6 +481,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSData_FastHex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMRMiner.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,8 +514,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23DB4DF21CF29FB00D2EB99 /* OfflineViewController.swift in Sources */,
 				B264461E219751A80085CC8B /* NoticeView.swift in Sources */,
 				9FE66AB1218EDD54005E9830 /* ViewController.swift in Sources */,
+				B23DB4DD21CF273400D2EB99 /* NetworkManager.swift in Sources */,
 				B21D7082219BB49000610A55 /* ButtonView.swift in Sources */,
 				9FE66AAF218EDD54005E9830 /* AppDelegate.swift in Sources */,
 			);
