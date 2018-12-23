@@ -125,6 +125,7 @@
 		B27918C92197576E007418A6 /* SFCompactText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Heavy.otf"; sourceTree = "<group>"; };
 		B27918CA2197576E007418A6 /* SFCompactDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Black.otf"; sourceTree = "<group>"; };
 		B27918CB2197576E007418A6 /* SFCompactDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Light.otf"; sourceTree = "<group>"; };
+		B27F73BA21B886E800CF7796 /* Think.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Think.entitlements; sourceTree = "<group>"; };
 		B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3893219A50200010B41B /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NSData_FastHex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3895219A50200010B41B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +197,7 @@
 		9FE66AAD218EDD54005E9830 /* Think */ = {
 			isa = PBXGroup;
 			children = (
+				B27F73BA21B886E800CF7796 /* Think.entitlements */,
 				9FE66AAE218EDD54005E9830 /* AppDelegate.swift */,
 				9FE66AB0218EDD54005E9830 /* ViewController.swift */,
 				9FE66AB2218EDD54005E9830 /* Main.storyboard */,
@@ -358,6 +360,11 @@
 				TargetAttributes = {
 					9FE66AAA218EDD53005E9830 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					9FE66ABE218EDD56005E9830 = {
 						CreatedOnToolsVersion = 10.1;

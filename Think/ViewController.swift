@@ -11,7 +11,6 @@ import XMRMiner
 
 class ViewController: UIViewController {
     let delegate = UIApplication.shared.delegate as! AppDelegate
-    
     @IBOutlet weak var HashRateLabel: UILabel!
     @IBOutlet weak var SubmittedLabel: UILabel!
     @IBOutlet weak var NoticeView: UIView!
@@ -23,7 +22,7 @@ class ViewController: UIViewController {
     var timerObject = Timer()
     var timeLeft = Int()
     var minerPaused = false
-    var isDefault = true
+    var isDefaultNoticeView = true
     
     var countdownTimer: Timer!
     // Change this value to change the time for the countdown
@@ -38,8 +37,8 @@ class ViewController: UIViewController {
             pauseMinerWithTimer()
         }
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        NoticeView.addGestureRecognizer(tap)
+        let noticeViewTapped = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        NoticeView.addGestureRecognizer(noticeViewTapped)
         NoticeView.isUserInteractionEnabled = true
         
         view.frame = CGRect(x: 0, y: 0, width: 267, height: 66)
@@ -56,8 +55,8 @@ class ViewController: UIViewController {
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        if isDefault {
-            isDefault = false
+        if isDefaultNoticeView {
+            isDefaultNoticeView = false
             
             if delegate.apiSuccess {
                 let quote = delegate.quoteMessage["quote"] as? String
@@ -72,7 +71,7 @@ class ViewController: UIViewController {
                 noticeMain.text = "Something is wrong with the API"
             }
         } else {
-            isDefault = true
+            isDefaultNoticeView = true
             credit.text = ""
             noticeMain.text = "Put down your phone for 30 minutes.            You get to find your focus, and your              phone computes to save lives."
             NoticeHeader.text = "Think better, together."
