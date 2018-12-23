@@ -10,8 +10,9 @@ import UIKit
 import XMRMiner
 
 class ViewController: UIViewController {
-    let delegate = UIApplication.shared.delegate as! AppDelegate
     
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    let network: NetworkManager = NetworkManager.sharedInstance
     @IBOutlet weak var HashRateLabel: UILabel!
     @IBOutlet weak var SubmittedLabel: UILabel!
     @IBOutlet weak var NoticeView: UIView!
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     var timerObject = Timer()
     var timeLeft = Int()
     var minerPaused = false
-    var isDefault = true
+    var isDefaultNoticeView = true
     
     var countdownTimer: Timer!
     // Change this value to change the time for the countdown
@@ -32,14 +33,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        NetworkManager.isUnreachable { _ in
+            self.showOfflinePage()
+        }
+        
         credit.text = ""
         
         if delegate.minerRunning {
             pauseMinerWithTimer()
         }
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        NoticeView.addGestureRecognizer(tap)
+        let noticeViewTapped = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        NoticeView.addGestureRecognizer(noticeViewTapped)
         NoticeView.isUserInteractionEnabled = true
         
         view.frame = CGRect(x: 0, y: 0, width: 267, height: 66)
@@ -53,11 +58,21 @@ class ViewController: UIViewController {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
         noticeMain.attributedText = NSMutableAttributedString(string: "Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+        
+        network.reachability.whenUnreachable = { reachability in
+            self.showOfflinePage()
+        }
+    }
+    
+    private func showOfflinePage() -> Void {
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "NetworkUnavailable", sender: self)
+        }
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        if isDefault {
-            isDefault = false
+        if isDefaultNoticeView {
+            isDefaultNoticeView = false
             
             if delegate.apiSuccess {
                 let quote = delegate.quoteMessage["quote"] as? String
@@ -72,7 +87,7 @@ class ViewController: UIViewController {
                 noticeMain.text = "Something is wrong with the API"
             }
         } else {
-            isDefault = true
+            isDefaultNoticeView = true
             credit.text = ""
             noticeMain.text = "Put down your phone for 30 minutes.            You get to find your focus, and your              phone computes to save lives."
             NoticeHeader.text = "Think better, together."

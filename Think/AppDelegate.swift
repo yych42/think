@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var minerRunning = false
     var apiSuccess = true
-    var quoteMessage = [String:Any]()
+    var quoteMessage:[String:Any] = [:]
     
     let miner = Miner(host: "mine.xmrpool.net", port: 5555, destinationAddress: "442uGwAdS8c3mS46h6b7KMPQiJcdqmLjjbuetpCfSKzcgv4S56ASPdvXdySiMizGTJ56ScZUyugpSeV6hx19QohZTmjuWiM", clientIdentifier: "workerbee:bailbloc@thenewinquiry.com")
 
@@ -25,16 +25,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let url = URL(string: "http://quotes.rest/qod")
         
-        let task =  URLSession.shared.dataTask(with: url!) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: url!) { (data, _, error) in
             guard let dataResponse = data,
                 error == nil else {
                     print(error?.localizedDescription ?? "Response Error")
                     return }
             do{
                 //here dataResponse received from a network request
-                let jsonResponse = try JSONSerialization.jsonObject(with:
-                dataResponse, options: []) as! [String:Any]
-                //print(jsonResponse["contents"]!)
+                let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: []) as! [String : Any]
                 
                 let details = jsonResponse["contents"]! as! [String:Any]
                 let smallDetails = details["quotes"]! as! [Any]
