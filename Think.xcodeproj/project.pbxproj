@@ -56,6 +56,7 @@
 		B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3893219A50200010B41B /* NSData_FastHex.framework */; };
 		B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3895219A50200010B41B /* ObjectMapper.framework */; };
 		B2BA3898219A50200010B41B /* XMRMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3897219A50200010B41B /* XMRMiner.framework */; };
+		B2F896CA21D1BDFB0011B444 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F896C921D1BDFB0011B444 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		B2BA3893219A50200010B41B /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NSData_FastHex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3895219A50200010B41B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3897219A50200010B41B /* XMRMiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XMRMiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F896C921D1BDFB0011B444 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FF847EBA8F21D286883AB519 /* Pods-Think.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Think/Pods-Think.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +213,7 @@
 				B27918ED21975797007418A6 /* Fonts */,
 				9FE66AB5218EDD56005E9830 /* Assets.xcassets */,
 				9FE66AB7218EDD56005E9830 /* LaunchScreen.storyboard */,
+				B2F896C921D1BDFB0011B444 /* Settings.bundle */,
 				9FE66ABA218EDD56005E9830 /* Info.plist */,
 			);
 			path = Think;
@@ -407,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F896CA21D1BDFB0011B444 /* Settings.bundle in Resources */,
 				B27918E12197576E007418A6 /* SFCompactText-Regular.otf in Resources */,
 				B27918D52197576E007418A6 /* SFCompactText-Medium.otf in Resources */,
 				B27918E52197576E007418A6 /* SFCompactText-BoldItalic.otf in Resources */,
