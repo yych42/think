@@ -88,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         miner.stop()
         UIDevice.current.isProximityMonitoringEnabled = false
         minerRunning = false
-        print("Miner paused")
+        //print("Miner paused")
     }
     
     private func stopMinerWithTimer() {

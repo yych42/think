@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         noticeMain.lineBreakMode = .byWordWrapping
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
-        noticeMain.attributedText = NSMutableAttributedString(string: "Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+        noticeMain.attributedText = NSMutableAttributedString(string: NSLocalizedString("MindfulTip", comment: ""), attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
         
         network.reachability.whenUnreachable = { reachability in
             self.showOfflinePage()
@@ -81,17 +81,17 @@ class ViewController: UIViewController {
                 let message = quote! + " - " + author!
                 noticeMain.text = message
                 NoticeHeader.text = delegate.quoteMessage["title"] as? String
-                credit.text = "Quotes information provided by They Said So"
+                credit.text = NSLocalizedString("QuoteCredit", comment: "")
                 UIView.transition(with: NoticeView, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
             } else {
-                NoticeHeader.text = "Oops! Something is wrong!"
-                noticeMain.text = "Something is wrong with the API"
+                NoticeHeader.text = NSLocalizedString("ApiErrorTitle", comment: "")
+                noticeMain.text = NSLocalizedString("ApiErrorDescription", comment: "")
             }
         } else {
             isDefaultNoticeView = true
             credit.text = ""
-            noticeMain.text = "Put down your phone for 30 minutes.            You get to find your focus, and your              phone computes to save lives."
-            NoticeHeader.text = "Think better, together."
+            noticeMain.text = NSLocalizedString("MindfulTip", comment: "")
+            NoticeHeader.text = NSLocalizedString("slogan", comment: "")
             UIView.transition(with: NoticeView, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
         }
     }
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
         if totalTime != 0 {
             if minerPaused != true {
                 totalTime -= 1
-                SubmittedLabel.text = "\(timeFormatted(totalTime)) remaining, keep going!"
+                SubmittedLabel.text = timeFormatted(totalTime) + NSLocalizedString("TimeRemaining", comment: "")
                 timeLeft = totalTime
             }
         } else {
@@ -149,10 +149,10 @@ class ViewController: UIViewController {
         UIDevice.current.isProximityMonitoringEnabled = false
         delegate.minerRunning = false
         if minerPaused {
-            HashRateLabel.text = "Paused"
-            StartStopButton.setTitle("Resume", for: .normal)
+            HashRateLabel.text = NSLocalizedString("paused", comment: "")
+            StartStopButton.setTitle(NSLocalizedString("resume", comment: ""), for: .normal)
         }
-        print("Miner paused")
+        //print("Miner paused")
     }
     
     func startMiner() {
@@ -160,15 +160,15 @@ class ViewController: UIViewController {
             minerPaused = false
             try delegate.miner.start(threadLimit: 2)
             UIDevice.current.isProximityMonitoringEnabled = true
-            HashRateLabel.text = "Running."
+            HashRateLabel.text = NSLocalizedString("running", comment: "")
             delegate.minerRunning = true
-            StartStopButton.setTitle("Disrupt", for: .normal)
-            print("Miner started")
+            StartStopButton.setTitle(NSLocalizedString("disrupt", comment: ""), for: .normal)
+            //print("Miner started")
         }
         catch {
             // Troubleshoot
-            print("The miner failed to start!")
-            print(error.localizedDescription)
+            //print("The miner failed to start!")
+            //print(error.localizedDescription)
         }
     }
 }
@@ -178,8 +178,8 @@ extension ViewController: MinerDelegate {
         if stats.hashRate > 0 {
         }
         if totalTime == 0 {
-            HashRateLabel.text = "Awesomeness!"
-            SubmittedLabel.text = "\(stats.submittedHashes) results submitted."
+            HashRateLabel.text = NSLocalizedString("awesome", comment: "")
+            SubmittedLabel.text = "\(stats.submittedHashes)" + NSLocalizedString("results", comment: "")
         }
     }
 }

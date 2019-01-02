@@ -56,6 +56,7 @@
 		B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3893219A50200010B41B /* NSData_FastHex.framework */; };
 		B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3895219A50200010B41B /* ObjectMapper.framework */; };
 		B2BA3898219A50200010B41B /* XMRMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3897219A50200010B41B /* XMRMiner.framework */; };
+		B2CC155F21DC415500B5840B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2CC156121DC415500B5840B /* Localizable.strings */; };
 		B2F896CA21D1BDFB0011B444 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F896C921D1BDFB0011B444 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,19 @@
 		B2BA3893219A50200010B41B /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NSData_FastHex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3895219A50200010B41B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3897219A50200010B41B /* XMRMiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XMRMiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CC155B21DC3F9F00B5840B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B2CC155C21DC3F9F00B5840B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B2CC156021DC415500B5840B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B2CC156221DC417D00B5840B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		B2CC156321DC417D00B5840B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B2CC156421DC417D00B5840B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2CC156521DC418A00B5840B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		B2CC156621DC418A00B5840B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B2CC156721DC418A00B5840B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2CC156821DC419900B5840B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		B2CC156921DC419900B5840B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B2CC156A21DC419900B5840B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2CC156B21DC41E900B5840B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B2F896C921D1BDFB0011B444 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FF847EBA8F21D286883AB519 /* Pods-Think.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Think/Pods-Think.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +227,7 @@
 				B27918ED21975797007418A6 /* Fonts */,
 				9FE66AB5218EDD56005E9830 /* Assets.xcassets */,
 				9FE66AB7218EDD56005E9830 /* LaunchScreen.storyboard */,
+				B2CC156121DC415500B5840B /* Localizable.strings */,
 				B2F896C921D1BDFB0011B444 /* Settings.bundle */,
 				9FE66ABA218EDD56005E9830 /* Info.plist */,
 			);
@@ -392,6 +407,9 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				de,
+				es,
 			);
 			mainGroup = 9FE66AA2218EDD53005E9830;
 			productRefGroup = 9FE66AAC218EDD54005E9830 /* Products */;
@@ -445,6 +463,7 @@
 				B27918D22197576E007418A6 /* SF-Pro-Text-Medium.otf in Resources */,
 				B27918E72197576E007418A6 /* SFCompactText-Bold.otf in Resources */,
 				B27918D32197576E007418A6 /* SFCompactText-Semibold.otf in Resources */,
+				B2CC155F21DC415500B5840B /* Localizable.strings in Resources */,
 				B27918EB2197576E007418A6 /* SFCompactDisplay-Black.otf in Resources */,
 				9FE66AB4218EDD54005E9830 /* Main.storyboard in Resources */,
 			);
@@ -563,6 +582,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FE66AB3218EDD54005E9830 /* Base */,
+				B2CC155B21DC3F9F00B5840B /* zh-Hans */,
+				B2CC156221DC417D00B5840B /* fr */,
+				B2CC156521DC418A00B5840B /* de */,
+				B2CC156821DC419900B5840B /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -571,8 +594,24 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FE66AB8218EDD56005E9830 /* Base */,
+				B2CC155C21DC3F9F00B5840B /* zh-Hans */,
+				B2CC156321DC417D00B5840B /* fr */,
+				B2CC156621DC418A00B5840B /* de */,
+				B2CC156921DC419900B5840B /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B2CC156121DC415500B5840B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2CC156021DC415500B5840B /* zh-Hans */,
+				B2CC156421DC417D00B5840B /* fr */,
+				B2CC156721DC418A00B5840B /* de */,
+				B2CC156A21DC419900B5840B /* es */,
+				B2CC156B21DC41E900B5840B /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -582,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -643,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
