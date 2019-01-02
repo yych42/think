@@ -64,7 +64,8 @@ class ViewController: UIViewController {
         }
     }
     
-    private func showOfflinePage() -> Void {
+    private func showOfflinePage()
+    {
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "NetworkUnavailable", sender: self)
         }

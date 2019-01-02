@@ -10,7 +10,6 @@ import UIKit
 class OfflineViewController: UIViewController {
     
     let network = NetworkManager.sharedInstance
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // If the network is reachable show the main controller
@@ -26,7 +25,7 @@ class OfflineViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
-    private func showMainController() -> Void {
+    private func showMainController() {
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "MainController", sender: self)
         }
