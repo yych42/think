@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "M33-Ry-bki"; */
+"M33-Ry-bki.text" = "Label";
+
+/* Class = "UILabel"; text = "Idling."; ObjectID = "MPX-xn-XTv"; */
+"MPX-xn-XTv.text" = "Idling.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UBc-y1-q6q"; */
+"UBc-y1-q6q.text" = "Label";
+
+/* Class = "UILabel"; text = "start a focus session now!"; ObjectID = "anc-JN-egO"; */
+"anc-JN-egO.text" = "start a focus session now!";
+
+/* Class = "UIButton"; normalTitle = "Get Focus"; ObjectID = "bhN-Lg-VgI"; */
+"bhN-Lg-VgI.normalTitle" = "Get Focus";
+
+/* Class = "UILabel"; text = "think."; ObjectID = "ixB-7U-rOc"; */
+"ixB-7U-rOc.text" = "think.";
+
+/* Class = "UILabel"; text = "Think better, together."; ObjectID = "nBX-3t-OEE"; */
+"nBX-3t-OEE.text" = "Think better, together.";
+
+/* Class = "UILabel"; text = "You are offline, please connect to a network"; ObjectID = "zfr-eM-V0P"; */
+"zfr-eM-V0P.text" = "您目前没有网络连接，请连接到一个可用的网络";

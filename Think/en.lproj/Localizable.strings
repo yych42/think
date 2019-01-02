@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  Think
+
+  Created by Runkai Zhang on 1/1/19.
+  Copyright © 2019 Yaoyu Chen. All rights reserved.
+*/
+
+// Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.
+"MindfulTip" = "Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.";
+
+// Api error
+"ApiErrorTitle" = "Oops! Something is wrong!";
+"ApiErrorDescription" = "Something is wrong with the API";
+
+// Slogan
+"slogan" = "Think better, together.";
+
+// Time ramaining
+"TimeRemaining" = " remaining, keep going!";
+
+// Quote credit
+"QuoteCredit" = "Quotes information provided by They Said So";
+
+// Pause
+"pause" = "Paused";
+
+// Resume
+"resume" = "Resume";
+
+// Running
+"running" = "Running.";
+
+// Disrupt
+"disrupt" = "Disrupt";
+
+// Awesome
+"awesome" = "Awesomeness!";
+
+// Submitted results
+"results" = " results submitted.";
