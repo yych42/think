@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var minerRunning = false
     var apiSuccess = true
-    var quoteMessage:[String:Any] = [:]
+    var quoteMessage = [String:Any]()
     
     let miner = Miner(host: "mine.xmrpool.net", port: 5555, destinationAddress: "442uGwAdS8c3mS46h6b7KMPQiJcdqmLjjbuetpCfSKzcgv4S56ASPdvXdySiMizGTJ56ScZUyugpSeV6hx19QohZTmjuWiM", clientIdentifier: "workerbee:bailbloc@thenewinquiry.com")
 
@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     return }
             do{
                 //here dataResponse received from a network request
+                //Converting dataResponse to a dictionary
                 let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: []) as! [String : Any]
                 
                 let details = jsonResponse["contents"]! as! [String:Any]

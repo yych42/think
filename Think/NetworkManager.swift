@@ -37,7 +37,7 @@ class NetworkManager: NSObject {
         // Do something globally here!
     }
     
-    static func stopNotifier() -> Void {
+    static func stopNotifier() {
         do {
             // Stop the network status notifier
             try (NetworkManager.sharedInstance.reachability).startNotifier()
@@ -66,7 +66,6 @@ class NetworkManager: NSObject {
             completed(NetworkManager.sharedInstance)
         }
     }
-    
     // Network is reachable via WiFi
     static func isReachableViaWiFi(completed: @escaping (NetworkManager) -> Void) {
         if (NetworkManager.sharedInstance.reachability).connection == .wifi {
