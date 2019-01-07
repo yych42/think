@@ -5,3 +5,37 @@
   Created by Runkai Zhang on 1/1/19.
   Copyright © 2019 Yaoyu Chen. All rights reserved.
 */
+
+// Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.
+"MindfulTip" = "放下您的手机30分钟. 您就可以集中注意力, 然后您的手机会通过计算来拯救生命.";
+
+// Api error
+"ApiErrorTitle" = "不好了! 出了一点问题!";
+"ApiErrorDescription" = "API 接收故障";
+
+// Slogan
+"slogan" = "Think better, together.";
+
+// Time ramaining
+"TimeRemaining" = " 加油！";
+
+// Quote credit
+"QuoteCredit" = "以上信息由 They Said So 提供";
+
+// Pause
+"pause" = "已暂停";
+
+// Resume
+"resume" = "继续";
+
+// Running
+"running" = "运行中.";
+
+// Disrupt
+"disrupt" = "中断";
+
+// Awesome
+"awesome" = "太棒了!";
+
+// Submitted results
+"results" = " 已发送记录.";

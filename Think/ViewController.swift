@@ -149,7 +149,7 @@ class ViewController: UIViewController {
         UIDevice.current.isProximityMonitoringEnabled = false
         delegate.minerRunning = false
         if minerPaused {
-            HashRateLabel.text = NSLocalizedString("paused", comment: "")
+            HashRateLabel.text = NSLocalizedString("pause", comment: "")
             StartStopButton.setTitle(NSLocalizedString("resume", comment: ""), for: .normal)
         }
         //print("Miner paused")
