@@ -9,7 +9,7 @@
 "UBc-y1-q6q.text" = "Label";
 
 /* Class = "UILabel"; text = "start a focus session now!"; ObjectID = "anc-JN-egO"; */
-"anc-JN-egO.text" = "start a focus session now!";
+"anc-JN-egO.text" = "马上开始集中注意力吧!";
 
 /* Class = "UIButton"; normalTitle = "Get Focus"; ObjectID = "bhN-Lg-VgI"; */
 "bhN-Lg-VgI.normalTitle" = "Get Focus";
