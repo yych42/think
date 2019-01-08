@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0847D1F4E2DF2E40DC4F5E92C2E85020"
+               BlueprintIdentifier = "9F6368A5C2CD5326FA7967C46667D6DE"
                BuildableName = "XMRMiner.framework"
                BlueprintName = "XMRMiner"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0847D1F4E2DF2E40DC4F5E92C2E85020"
+            BlueprintIdentifier = "9F6368A5C2CD5326FA7967C46667D6DE"
             BuildableName = "XMRMiner.framework"
             BlueprintName = "XMRMiner"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0847D1F4E2DF2E40DC4F5E92C2E85020"
+            BlueprintIdentifier = "9F6368A5C2CD5326FA7967C46667D6DE"
             BuildableName = "XMRMiner.framework"
             BlueprintName = "XMRMiner"
             ReferencedContainer = "container:Pods.xcodeproj">
