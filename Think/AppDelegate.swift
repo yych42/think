@@ -31,8 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print(error?.localizedDescription ?? "Response Error")
                     return }
             do{
-                //dataResponse received from a network request
-                //Converting dataResponse to a dictionary
+                // dataResponse received from a network request
+                // Converting dataResponse to a dictionary
                 let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: []) as! [String : Any]
                 
                 let details = jsonResponse["contents"]! as! [String:Any]
