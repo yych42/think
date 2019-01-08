@@ -27,12 +27,13 @@ class ViewController: UIViewController {
     var isDefaultNoticeView = true
     
     var countdownTimer: Timer!
-    // Change this value to change the time for the countdown
+    // MARK: - Change this value to change the time for the countdown
     var totalTime = 1800
+    // MARK: -
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         NetworkManager.isUnreachable { _ in
             self.showOfflinePage()
         }
@@ -64,6 +65,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Show the offline view controller
     private func showOfflinePage()
     {
         DispatchQueue.main.async {
@@ -71,6 +73,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Handle a series of actions after the notice board is tapped
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         if isDefaultNoticeView {
             isDefaultNoticeView = false
@@ -96,7 +99,7 @@ class ViewController: UIViewController {
         }
     }
     
-    // Call this function whenever you want to start a 30 minutes scheduled focus session.
+    // MARK: - Call these function whenever you want to start or stop a focus session.
     func startMinerWithTimer() {
         if minerPaused {
             startMiner()
@@ -114,6 +117,7 @@ class ViewController: UIViewController {
         timerObject.invalidate()
     }
     
+    // MARK: - Update the time
     @objc func updateTime() {
         if totalTime != 0 {
             if minerPaused != true {
@@ -133,6 +137,7 @@ class ViewController: UIViewController {
         return String(format: "%02d:%02d", minutes, seconds)
     }
     
+    // MARK: - Start or stop the timer as the user click on the focus button
     @IBAction func miningTriggered(_ sender: Any) {
         switch delegate.minerRunning {
         case true:
@@ -143,6 +148,8 @@ class ViewController: UIViewController {
             startMinerWithTimer()
         }
     }
+    
+    // MARK: - Original Start and Stop functions, do NOT call without timer
     
     func stopMiner() {
         delegate.miner.stop()
