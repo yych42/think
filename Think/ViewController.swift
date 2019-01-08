@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     var isDefaultNoticeView = true
     
     var countdownTimer: Timer!
-    // MARK: - Change this value to change the time for the countdown
+    // MARK: - Change this value to set the time for the countdown
     var totalTime = 1800
     // MARK: -
     
