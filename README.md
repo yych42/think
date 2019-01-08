@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them:
 
 A mac:
-Up to this point I think you already have a mac, but just in case, you are required to have a mac in order to compile this project!
+Up to this point I think you already have a mac, but just in case, you are required to have a mac(or any machine running MacOS) in order to compile this project!
 
 Xcode 10:
 1. Go to App Store on your mac.
