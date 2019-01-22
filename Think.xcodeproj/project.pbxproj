@@ -52,6 +52,7 @@
 		B27918EA2197576E007418A6 /* SFCompactText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918C92197576E007418A6 /* SFCompactText-Heavy.otf */; };
 		B27918EB2197576E007418A6 /* SFCompactDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918CA2197576E007418A6 /* SFCompactDisplay-Black.otf */; };
 		B27918EC2197576E007418A6 /* SFCompactDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918CB2197576E007418A6 /* SFCompactDisplay-Light.otf */; };
+		B29FD59C21ED784800BEBF80 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29FD59B21ED784800BEBF80 /* Reachability.framework */; };
 		B2BA3892219A50200010B41B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */; };
 		B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3893219A50200010B41B /* NSData_FastHex.framework */; };
 		B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3895219A50200010B41B /* ObjectMapper.framework */; };
@@ -132,6 +133,7 @@
 		B27918CA2197576E007418A6 /* SFCompactDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Black.otf"; sourceTree = "<group>"; };
 		B27918CB2197576E007418A6 /* SFCompactDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Light.otf"; sourceTree = "<group>"; };
 		B27F73BA21B886E800CF7796 /* Think.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Think.entitlements; sourceTree = "<group>"; };
+		B29FD59B21ED784800BEBF80 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3893219A50200010B41B /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NSData_FastHex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA3895219A50200010B41B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29FD59C21ED784800BEBF80 /* Reachability.framework in Frameworks */,
 				B2BA3892219A50200010B41B /* CocoaAsyncSocket.framework in Frameworks */,
 				B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */,
 				B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */,
@@ -305,6 +308,7 @@
 		D6022657BFDE94356E9E57F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B29FD59B21ED784800BEBF80 /* Reachability.framework */,
 				B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */,
 				B2BA3893219A50200010B41B /* NSData_FastHex.framework */,
 				B2BA3895219A50200010B41B /* ObjectMapper.framework */,
@@ -742,6 +746,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C58CLY4K2U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS",
+				);
 				INFOPLIST_FILE = Think/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -761,6 +769,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C58CLY4K2U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS",
+				);
 				INFOPLIST_FILE = Think/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
