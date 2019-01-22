@@ -8,12 +8,6 @@
 
 import UIKit
 import XMRMiner
-import Kinvey
-Kinvey.sharedClient.initialize(
-    appKey: 'kid_SJMio3qf4',
-    appSecret: '61f199089d0b49c29bd38c05ed5e56a3',
-    instanceId: 'undefined'
-)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
