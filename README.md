@@ -6,7 +6,7 @@
 
 | Contributors  |      Fork     |
 | ------------- | -------------:|
-| Runkai Zhang  | [![Build Status](https://travis-ci.com/1105420698/Journey.svg?token=TCehoLZYMhBgqKq83DwZ&branch=master)](https://travis-ci.com/1105420698/Journey) |
+| Runkai Zhang  | [![Build Status](https://travis-ci.com/1105420698/think.svg?branch=master)](https://travis-ci.com/1105420698/think) |
 
 ## Getting Started
 
