@@ -19,6 +19,8 @@
 		B23DB4DD21CF273400D2EB99 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DB4DC21CF273400D2EB99 /* NetworkManager.swift */; };
 		B23DB4DF21CF29FB00D2EB99 /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DB4DE21CF29FB00D2EB99 /* OfflineViewController.swift */; };
 		B264461E219751A80085CC8B /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264461D219751A80085CC8B /* NoticeView.swift */; };
+		B273E3112237331700BB209D /* XMRMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3897219A50200010B41B /* XMRMiner.framework */; };
+		B273E3122237331700BB209D /* XMRMiner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3897219A50200010B41B /* XMRMiner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B27918CC2197576E007418A6 /* SFCompactDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AB2197576C007418A6 /* SFCompactDisplay-Ultralight.otf */; };
 		B27918CD2197576E007418A6 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AC2197576C007418A6 /* SF-Pro-Text-Semibold.otf */; };
 		B27918CE2197576E007418A6 /* SFCompactDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AD2197576C007418A6 /* SFCompactDisplay-Regular.otf */; };
@@ -77,6 +79,20 @@
 			remoteInfo = Think;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B273E3132237331700BB209D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B273E3122237331700BB209D /* XMRMiner.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7064E63967F9E1659FD0A1A2 /* Pods-Think.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think.release.xcconfig"; path = "Pods/Target Support Files/Pods-Think/Pods-Think.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +178,7 @@
 			files = (
 				B29FD59C21ED784800BEBF80 /* Reachability.framework in Frameworks */,
 				B2BA3892219A50200010B41B /* CocoaAsyncSocket.framework in Frameworks */,
+				B273E3112237331700BB209D /* XMRMiner.framework in Frameworks */,
 				B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */,
 				B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */,
 				B2BA3898219A50200010B41B /* XMRMiner.framework in Frameworks */,
@@ -330,6 +347,7 @@
 				9FE66AA8218EDD53005E9830 /* Frameworks */,
 				9FE66AA9218EDD53005E9830 /* Resources */,
 				1E9BC94D94860B2E4CFB59C8 /* [CP] Embed Pods Frameworks */,
+				B273E3132237331700BB209D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
