@@ -4,6 +4,12 @@
 [![GitHub issues](https://img.shields.io/github/issues/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think/issues)
 [![GitHub license](https://img.shields.io/github/license/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think)
 
+| Contributors  | Fork          |
+| ------------- | -------------:|
+| Runkai Zhang  | [![Build Status](https://travis-ci.com/1105420698/Journey.svg?token=TCehoLZYMhBgqKq83DwZ&branch=master)](https://travis-ci.com/1105420698/Journey) |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
