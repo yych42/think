@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81AAA711EC62C8F89446B9EF /* Pods_Think.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEADD56FC076E07443CC3D0 /* Pods_Think.framework */; };
 		9FE66AAF218EDD54005E9830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66AAE218EDD54005E9830 /* AppDelegate.swift */; };
 		9FE66AB1218EDD54005E9830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE66AB0218EDD54005E9830 /* ViewController.swift */; };
 		9FE66AB4218EDD54005E9830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE66AB2218EDD54005E9830 /* Main.storyboard */; };
@@ -19,8 +18,12 @@
 		B23DB4DD21CF273400D2EB99 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DB4DC21CF273400D2EB99 /* NetworkManager.swift */; };
 		B23DB4DF21CF29FB00D2EB99 /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DB4DE21CF29FB00D2EB99 /* OfflineViewController.swift */; };
 		B264461E219751A80085CC8B /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264461D219751A80085CC8B /* NoticeView.swift */; };
-		B273E3112237331700BB209D /* XMRMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3897219A50200010B41B /* XMRMiner.framework */; };
-		B273E3122237331700BB209D /* XMRMiner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3897219A50200010B41B /* XMRMiner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B26EA671223735D3000BB9C9 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26EA670223735D3000BB9C9 /* CocoaAsyncSocket.framework */; };
+		B26EA673223735D3000BB9C9 /* NSData_FastHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26EA672223735D3000BB9C9 /* NSData_FastHex.framework */; };
+		B26EA675223735D3000BB9C9 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26EA674223735D3000BB9C9 /* ObjectMapper.framework */; };
+		B26EA677223735D3000BB9C9 /* Pods_Think.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26EA676223735D3000BB9C9 /* Pods_Think.framework */; };
+		B26EA679223735D3000BB9C9 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26EA678223735D3000BB9C9 /* Reachability.framework */; };
+		B26EA67B223735E5000BB9C9 /* XMRMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26EA67A223735E5000BB9C9 /* XMRMiner.framework */; };
 		B27918CC2197576E007418A6 /* SFCompactDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AB2197576C007418A6 /* SFCompactDisplay-Ultralight.otf */; };
 		B27918CD2197576E007418A6 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AC2197576C007418A6 /* SF-Pro-Text-Semibold.otf */; };
 		B27918CE2197576E007418A6 /* SFCompactDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918AD2197576C007418A6 /* SFCompactDisplay-Regular.otf */; };
@@ -54,11 +57,6 @@
 		B27918EA2197576E007418A6 /* SFCompactText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918C92197576E007418A6 /* SFCompactText-Heavy.otf */; };
 		B27918EB2197576E007418A6 /* SFCompactDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918CA2197576E007418A6 /* SFCompactDisplay-Black.otf */; };
 		B27918EC2197576E007418A6 /* SFCompactDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27918CB2197576E007418A6 /* SFCompactDisplay-Light.otf */; };
-		B29FD59C21ED784800BEBF80 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29FD59B21ED784800BEBF80 /* Reachability.framework */; };
-		B2BA3892219A50200010B41B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */; };
-		B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3893219A50200010B41B /* NSData_FastHex.framework */; };
-		B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3895219A50200010B41B /* ObjectMapper.framework */; };
-		B2BA3898219A50200010B41B /* XMRMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA3897219A50200010B41B /* XMRMiner.framework */; };
 		B2CC155F21DC415500B5840B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2CC156121DC415500B5840B /* Localizable.strings */; };
 		B2F896CA21D1BDFB0011B444 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F896C921D1BDFB0011B444 /* Settings.bundle */; };
 /* End PBXBuildFile section */
@@ -79,20 +77,6 @@
 			remoteInfo = Think;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B273E3132237331700BB209D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B273E3122237331700BB209D /* XMRMiner.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7064E63967F9E1659FD0A1A2 /* Pods-Think.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think.release.xcconfig"; path = "Pods/Target Support Files/Pods-Think/Pods-Think.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +99,12 @@
 		B23DB4DE21CF29FB00D2EB99 /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
 		B240D1C3219E4D16007DD5CA /* Futura Heavy Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Heavy Oblique.otf"; sourceTree = "<group>"; };
 		B264461D219751A80085CC8B /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
+		B26EA670223735D3000BB9C9 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26EA672223735D3000BB9C9 /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NSData_FastHex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26EA674223735D3000BB9C9 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26EA676223735D3000BB9C9 /* Pods_Think.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Think.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26EA678223735D3000BB9C9 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26EA67A223735E5000BB9C9 /* XMRMiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XMRMiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27918AB2197576C007418A6 /* SFCompactDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Ultralight.otf"; sourceTree = "<group>"; };
 		B27918AC2197576C007418A6 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		B27918AD2197576C007418A6 /* SFCompactDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Regular.otf"; sourceTree = "<group>"; };
@@ -176,13 +166,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29FD59C21ED784800BEBF80 /* Reachability.framework in Frameworks */,
-				B2BA3892219A50200010B41B /* CocoaAsyncSocket.framework in Frameworks */,
-				B273E3112237331700BB209D /* XMRMiner.framework in Frameworks */,
-				B2BA3894219A50200010B41B /* NSData_FastHex.framework in Frameworks */,
-				B2BA3896219A50200010B41B /* ObjectMapper.framework in Frameworks */,
-				B2BA3898219A50200010B41B /* XMRMiner.framework in Frameworks */,
-				81AAA711EC62C8F89446B9EF /* Pods_Think.framework in Frameworks */,
+				B26EA67B223735E5000BB9C9 /* XMRMiner.framework in Frameworks */,
+				B26EA671223735D3000BB9C9 /* CocoaAsyncSocket.framework in Frameworks */,
+				B26EA673223735D3000BB9C9 /* NSData_FastHex.framework in Frameworks */,
+				B26EA675223735D3000BB9C9 /* ObjectMapper.framework in Frameworks */,
+				B26EA677223735D3000BB9C9 /* Pods_Think.framework in Frameworks */,
+				B26EA679223735D3000BB9C9 /* Reachability.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +314,12 @@
 		D6022657BFDE94356E9E57F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B26EA67A223735E5000BB9C9 /* XMRMiner.framework */,
+				B26EA670223735D3000BB9C9 /* CocoaAsyncSocket.framework */,
+				B26EA672223735D3000BB9C9 /* NSData_FastHex.framework */,
+				B26EA674223735D3000BB9C9 /* ObjectMapper.framework */,
+				B26EA676223735D3000BB9C9 /* Pods_Think.framework */,
+				B26EA678223735D3000BB9C9 /* Reachability.framework */,
 				B29FD59B21ED784800BEBF80 /* Reachability.framework */,
 				B2BA3891219A50200010B41B /* CocoaAsyncSocket.framework */,
 				B2BA3893219A50200010B41B /* NSData_FastHex.framework */,
@@ -347,7 +342,6 @@
 				9FE66AA8218EDD53005E9830 /* Frameworks */,
 				9FE66AA9218EDD53005E9830 /* Resources */,
 				1E9BC94D94860B2E4CFB59C8 /* [CP] Embed Pods Frameworks */,
-				B273E3132237331700BB209D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
