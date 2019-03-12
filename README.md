@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think/issues)
 [![GitHub license](https://img.shields.io/github/license/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think)
 
-| Contributors  | Fork          |
+| Contributors  |      Fork     |
 | ------------- | -------------:|
 | Runkai Zhang  | [![Build Status](https://travis-ci.com/1105420698/Journey.svg?token=TCehoLZYMhBgqKq83DwZ&branch=master)](https://travis-ci.com/1105420698/Journey) |
 
