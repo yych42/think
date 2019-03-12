@@ -7,8 +7,6 @@
 | Contributors  | Fork          |
 | ------------- | -------------:|
 | Runkai Zhang  | [![Build Status](https://travis-ci.com/1105420698/Journey.svg?token=TCehoLZYMhBgqKq83DwZ&branch=master)](https://travis-ci.com/1105420698/Journey) |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
 
 ## Getting Started
 
