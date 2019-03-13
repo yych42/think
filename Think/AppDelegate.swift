@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var minerRunning = false
     var apiSuccess = true
-    var quoteMessage:[String:Any] = [:]
+    var quoteMessage = [String:Any]()
     
     let miner = Miner(host: "mine.xmrpool.net", port: 5555, destinationAddress: "442uGwAdS8c3mS46h6b7KMPQiJcdqmLjjbuetpCfSKzcgv4S56ASPdvXdySiMizGTJ56ScZUyugpSeV6hx19QohZTmjuWiM", clientIdentifier: "workerbee:bailbloc@thenewinquiry.com")
 
@@ -31,7 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print(error?.localizedDescription ?? "Response Error")
                     return }
             do{
-                //here dataResponse received from a network request
+                // dataResponse received from a network request
+                // Converting dataResponse to a dictionary
                 let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: []) as! [String : Any]
                 
                 let details = jsonResponse["contents"]! as! [String:Any]
@@ -53,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
         
-        // This function stop the mining process as the app is dismissed from the user to prevent using significant power in the background.
+        // MARK: - Stop the mining process as the app is dismissed from the user to prevent using significant power in the background.
         stopMinerWithTimer()
     }
 
@@ -87,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         miner.stop()
         UIDevice.current.isProximityMonitoringEnabled = false
         minerRunning = false
-        print("Miner paused")
+        //print("Miner paused")
     }
     
     private func stopMinerWithTimer() {

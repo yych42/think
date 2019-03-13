@@ -39,9 +39,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBc-y1-q6q">
-
-                                        <rect key="frame" x="18.999999999999996" y="49" width="41.666666666666657" height="20.333333333333329"/>
-                                      
+                                        <rect key="frame" x="18.999999999999996" y="48.666666666666686" width="41.666666666666657" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

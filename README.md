@@ -4,6 +4,10 @@
 [![GitHub issues](https://img.shields.io/github/issues/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think/issues)
 [![GitHub license](https://img.shields.io/github/license/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think)
 
+| Contributors  |      Fork     |
+| ------------- | -------------:|
+| Runkai Zhang  | [![Build Status](https://travis-ci.com/1105420698/think.svg?branch=master)](https://travis-ci.com/1105420698/think) |
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -13,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them:
 
 A mac:
-Up to this point I think you already have a mac, but just in case, you are required to have a mac in order to compile this project!
+Up to this point I think you already have a mac, but just in case, you are required to have a mac(or any machine running MacOS) in order to compile this project!
 
 Xcode 10:
 1. Go to App Store on your mac.
