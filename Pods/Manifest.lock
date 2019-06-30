@@ -1,8 +1,8 @@
 PODS:
   - CocoaAsyncSocket (7.6.3)
   - "NSData+FastHex (1.0.1)"
-  - ObjectMapper (3.4.2)
-  - ReachabilitySwift (4.3.0)
+  - ObjectMapper (3.5.1)
+  - ReachabilitySwift (4.3.1)
   - XMRMiner (0.1.0):
     - CocoaAsyncSocket (~> 7.6)
     - "NSData+FastHex"
@@ -23,10 +23,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   "NSData+FastHex": a22ad031ee10a4297d0bf4d20cf03406a4476169
-  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
-  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
   XMRMiner: f7704f21d2418a751b6d7ca64263e2b917a89191
 
-PODFILE CHECKSUM: 885a831f7795c567824019a9d6046b706523ae74
+PODFILE CHECKSUM: 9ba12888daa41b5757883fb48c264c50f3f43276
 
 COCOAPODS: 1.5.2

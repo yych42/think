@@ -1,0 +1,23 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "wifi-off~universal@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "wifi-off~universal@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "wifi-off~universal@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ]
+}
