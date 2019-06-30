@@ -1,4 +1,4 @@
-platform :ios, '12.1'
+platform :ios, '12.4'
 use_frameworks!
 
 target 'Think' do

@@ -7,7 +7,7 @@
 */
 
 // Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.
-"MindfulTip" = "Put down your phone for 30 minutes. You get to find you focus, and your phone computes to save lives.";
+"MindfulTip" = "Put down your phone for 30 minutes. \nYou get to find you focus, and your \nphone computes to save lives.";
 
 // Api error
 "ApiErrorTitle" = "Oops! Something is wrong!";

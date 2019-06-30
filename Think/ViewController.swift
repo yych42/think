@@ -52,13 +52,11 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         self.view = view
         
-        noticeMain.textColor = UIColor(red: 0.2, green: 0.23, blue: 0.26, alpha: 1)
-        noticeMain.font = UIFont(name: "GillSans-SemiBold", size: 15)
-        noticeMain.numberOfLines = 0
-        noticeMain.lineBreakMode = .byWordWrapping
+        let attributedString = NSMutableAttributedString(string: NSLocalizedString("MindfulTip", comment: ""))
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 4
-        noticeMain.attributedText = NSMutableAttributedString(string: NSLocalizedString("MindfulTip", comment: ""), attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+        paragraphStyle.lineSpacing = 5.75
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+        noticeMain.attributedText = attributedString
         
         network.reachability.whenUnreachable = { reachability in
             self.showOfflinePage()
@@ -84,6 +82,7 @@ class ViewController: UIViewController {
                 let message = quote! + " - " + author!
                 noticeMain.text = message
                 NoticeHeader.text = delegate.quoteMessage["title"] as? String
+                credit.isHidden = false
                 credit.text = NSLocalizedString("QuoteCredit", comment: "")
                 UIView.transition(with: NoticeView, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
             } else {
@@ -92,7 +91,7 @@ class ViewController: UIViewController {
             }
         } else {
             isDefaultNoticeView = true
-            credit.text = ""
+            credit.isHidden = true
             noticeMain.text = NSLocalizedString("MindfulTip", comment: "")
             NoticeHeader.text = NSLocalizedString("slogan", comment: "")
             UIView.transition(with: NoticeView, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
