@@ -1,4 +1,4 @@
-# think - focus for good
+# [Project Discontinued] think - focus for good
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e001ed17835247dba27fadda2811f369)](https://app.codacy.com/app/chen-yaoyu/think?utm_source=github.com&utm_medium=referral&utm_content=chen-yaoyu/think&utm_campaign=Badge_Grade_Settings)
 [![GitHub issues](https://img.shields.io/github/issues/chen-yaoyu/think.svg)](https://github.com/chen-yaoyu/think/issues)
